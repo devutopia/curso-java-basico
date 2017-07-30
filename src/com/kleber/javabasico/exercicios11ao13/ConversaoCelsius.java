@@ -6,17 +6,17 @@ public class ConversaoCelsius {
 
 	public static void main(String[] args) {
 		
-Scanner scan = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("Qual a temperatura em Celsius no momento?");
 		
 		double tempCelsius = scan.nextDouble();
 		
-		double tempFarenheit;
+		double tempFahrenheit;
 		
-		tempCelsius = 5 * (tempFarenheit - 32) / 9;
+		tempFahrenheit = 1.8 * tempCelsius + 32;
 		
-		System.out.println("A temperatura em graus Celsius é: " + tempCelsius);
+		System.out.println("A temperatura em graus Celsius é: " + tempFahrenheit);
 
 	}
 
