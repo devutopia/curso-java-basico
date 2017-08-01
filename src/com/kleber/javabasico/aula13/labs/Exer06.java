@@ -1,22 +1,21 @@
-package com.kleber.javabasico.exercicios11ao13;
+package com.kleber.javabasico.aula13.labs;
 
 import java.util.Scanner;
 
-public class AreaDoCirculo {
+public class Exer06 {
 
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Entre com o valor do raio do círculo: ");
+		System.out.println("Informe o valor do raio do círculo: ");
 		
-		
-		double PI = 3.1415926;
 		double raio = scan.nextDouble();
-		double area = PI * (raio * raio);
+		double area = Math.PI * (raio * raio);
 		
 		System.out.println("Área do círculo: " + area);
-
+		
+		//ok
 	}
 
 }

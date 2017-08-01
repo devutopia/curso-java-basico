@@ -1,8 +1,8 @@
-package com.kleber.javabasico.exercicios11ao13;
+package com.kleber.javabasico.aula13.labs;
 
 import java.util.Scanner;
 
-public class ConversaoCelsius {
+public class Exer10 {
 
 	public static void main(String[] args) {
 		
@@ -16,7 +16,8 @@ public class ConversaoCelsius {
 		
 		tempFahrenheit = 1.8 * tempCelsius + 32;
 		
-		System.out.println("A temperatura em graus Celsius é: " + tempFahrenheit);
+		System.out.println("A temperatura " + tempCelsius + 
+				" C é igual a " + tempFahrenheit + " F.");
 
 	}
 

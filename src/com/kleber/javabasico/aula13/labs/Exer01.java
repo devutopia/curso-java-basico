@@ -1,8 +1,9 @@
-package com.kleber.javabasico.exercicios11ao13;
+package com.kleber.javabasico.aula13.labs;
 
-public class AloMundo {
+public class Exer01 {
 
 	public static void main(String[] args) {
 		System.out.println("Alô Mundo!");
+		//ok
 	}
 }

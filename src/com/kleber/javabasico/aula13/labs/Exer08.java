@@ -1,24 +1,23 @@
-package com.kleber.javabasico.exercicios11ao13;
+package com.kleber.javabasico.aula13.labs;
 
 import java.util.Scanner;
 
-public class SalarioMensal {
+public class Exer08 {
 
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Qual o valor da sua hora trabalhada? ");
-		
+		System.out.println("Qual o valor/hora trabalhada?");
 		double valorHora = scan.nextDouble();
 		
 		System.out.println("Quantas horas vc trabalha no mês? ");
-		
-		int horasTrabalhadas = scan.nextInt();
+		double horasTrabalhadas = scan.nextDouble();
 		
 		double salario = valorHora * horasTrabalhadas;
+		System.out.println("Seu salário é de: " + salario);
 		
-		System.out.println("Seu salário mensal é de: " + salario);
+		//ok
 
 	}
 

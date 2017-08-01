@@ -1,8 +1,8 @@
-package com.kleber.javabasico.exercicios11ao13;
+package com.kleber.javabasico.aula13.labs;
 
 import java.util.Scanner;
 
-public class CalculaPeso {
+public class Exer12 {
 	
 	/*Tendo como dados de entrada a altura de uma pessoa, construa um
 	algoritmo que calcule seu peso ideal, usando a seguinte fórmula:
@@ -12,13 +12,14 @@ public class CalculaPeso {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Digite sua altura: ");
-		
+		System.out.println("Informe sua altura: ");
 		float altura = scan.nextFloat();
 		
 		float pesoIdeal = (72.7f * altura) - 58;
 		
 		System.out.println("Seu peso ideal é: " + pesoIdeal + "kg");
+		
+		//ok
 
 	}
 

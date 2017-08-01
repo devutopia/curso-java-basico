@@ -1,20 +1,20 @@
-package com.kleber.javabasico.exercicios11ao13;
+package com.kleber.javabasico.aula13.labs;
 
 import java.util.Scanner;
 
-public class ConverteCentimetros {
+public class Exer05 {
 
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Entre com o valor dos metros a serem convertidos: ");
+		System.out.println("Entre com o valor dos metros.");
 		
 		float metros = scan.nextFloat();
 		
 		System.out.println("Quantidade dos metros em centimetros: " + metros * 100 + " cm");
 		
-
+		//ok
 	}
 
 }

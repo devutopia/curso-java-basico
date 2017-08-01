@@ -1,18 +1,20 @@
-package com.kleber.javabasico.exercicios11ao13;
+package com.kleber.javabasico.aula13.labs;
 
 import java.util.Scanner;
 
-public class PegaNumero {
+public class Exer02 {
 
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Digite um número: ");
+		System.out.println("Digite um número inteiro: ");
 		
 		int numeroDigitado = scan.nextInt();
 		
 		System.out.println("O número digitado foi: " + numeroDigitado);
+		
+		//ok
 	}
 
 }

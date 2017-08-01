@@ -1,8 +1,8 @@
-package com.kleber.javabasico.exercicios11ao13;
+package com.kleber.javabasico.aula13.labs;
 
 import java.util.Scanner;
 
-public class Calculos {
+public class Exer11 {
 	
 	/*Faça um Programa que peça 2 números inteiros e um número real.
 	Calcule e mostre:
@@ -28,7 +28,7 @@ public class Calculos {
 		
 		System.out.println((primeiroNumero * 2) + (segundoNumero / 2));
 		System.out.println((primeiroNumero * 3) + terceiroNumero);
-		System.out.println(Math.pow(terceiroNumero, 2));
+		System.out.println(Math.pow(terceiroNumero, 3));
 
 	}
 

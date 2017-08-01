@@ -1,8 +1,8 @@
-package com.kleber.javabasico.exercicios11ao13;
+package com.kleber.javabasico.aula13.labs;
 
 import java.util.Scanner;
 
-public class SomaNumeros {
+public class Exer03 {
 
 	public static void main(String[] args) {
 		
@@ -19,6 +19,8 @@ public class SomaNumeros {
 		int resultado = primeiroNumero + segundoNumero;
 		
 		System.out.println("A soma dos números digitados é: " + resultado);
+		
+		//ok
 
 	}
 
