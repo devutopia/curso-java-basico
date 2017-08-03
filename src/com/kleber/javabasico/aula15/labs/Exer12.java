@@ -38,31 +38,31 @@ public class Exer12 {
 		
 		if (salarioBruto <= 900){
 			impostoRenda = 0;
-			inss = (salarioBruto / 100) * 11;
-			fgts = (salarioBruto / 100) * 10;
+			inss = (salarioBruto / 100) * 10;
+			fgts = (salarioBruto / 100) * 11;
 			sindicato = (salarioBruto / 100) * 3;
-			totalDescontos = impostoRenda + fgts + sindicato;
+			totalDescontos = impostoRenda + inss + sindicato;
 			salarioLiquido = salarioBruto - totalDescontos;
 		} else if (salarioBruto > 900 && salarioBruto <= 1500){
 			impostoRenda = (salarioBruto/100 * 5);
-			inss = (salarioBruto / 100) * 11;
-			fgts = (salarioBruto / 100) * 10;
+			inss = (salarioBruto / 100) * 10;
+			fgts = (salarioBruto / 100) * 11;
 			sindicato = (salarioBruto / 100) * 3;
-			totalDescontos = impostoRenda + fgts + sindicato;
+			totalDescontos = impostoRenda + inss + sindicato;
 			salarioLiquido = salarioBruto - totalDescontos;
 		} else if (salarioBruto > 1500 && salarioBruto <= 2500){
 			impostoRenda = (salarioBruto/100 * 10);
-			inss = (salarioBruto / 100) * 11;
-			fgts = (salarioBruto / 100) * 10;
+			inss = (salarioBruto / 100) * 10;
+			fgts = (salarioBruto / 100) * 11;
 			sindicato = (salarioBruto / 100) * 3;
-			totalDescontos = impostoRenda + fgts + sindicato;
+			totalDescontos = impostoRenda + inss + sindicato;
 			salarioLiquido = salarioBruto - totalDescontos;
 		} else {
 			impostoRenda = (salarioBruto/100 * 20);			
-			inss = (salarioBruto / 100) * 11;
-			fgts = (salarioBruto / 100) * 10;
+			inss = (salarioBruto / 100) * 10;
+			fgts = (salarioBruto / 100) * 11;
 			sindicato = (salarioBruto / 100) * 3;
-			totalDescontos = impostoRenda + fgts + sindicato;
+			totalDescontos = impostoRenda + inss + sindicato;
 			salarioLiquido = salarioBruto - totalDescontos;
 		}
 		System.out.println("Salário bruto: " + "(" + valorHora + " * " + horasTrabalhadas + ")" + ":R$" + salarioBruto);

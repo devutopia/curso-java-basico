@@ -32,4 +32,5 @@ public class Exer05 {
 			System.out.println("Aprovado com distinção");
 		}
 	}
+	//ok
 }

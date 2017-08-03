@@ -25,4 +25,5 @@ public class Exer06 {
 			System.out.println("O maior número digitado foi: " + num3);
 		}
 	}
+	//ok
 }

@@ -23,5 +23,6 @@ public class Exer02 {
 		} else {
 			System.out.println("Você digitou um número neutro");
 		}
+		//ok
 	}
 }

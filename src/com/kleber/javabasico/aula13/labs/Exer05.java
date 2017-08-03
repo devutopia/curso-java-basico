@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class Exer05 {
 
+	private static Scanner scan;
+
 	public static void main(String[] args) {
 		
-		Scanner scan = new Scanner(System.in);
+		scan = new Scanner(System.in);
 		
 		System.out.println("Entre com o valor dos metros.");
 		

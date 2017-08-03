@@ -14,19 +14,23 @@ public class Exer04 {
 		scan = new Scanner(System.in);
 		
 		System.out.println("Informe uma letra do alfabeto:");
-		String letra = scan.nextLine();
+		String letra = scan.next();
 		
-		switch (letra.toLowerCase()) {
-		case "a":
-		case "e":
-		case "i":
-		case "o":
-		case "u":
-			System.out.println("Essa é uma vogal");
-			break;
-		default:
-			System.out.println("Essa é uma consoante");
-			break;
+		if (letra.length() > 1){
+			System.out.println("Não é uma letra válida");
+		} else {
+			switch (letra.toLowerCase()) {
+			case "a":
+			case "e":
+			case "i":
+			case "o":
+			case "u":
+				System.out.println("Essa é uma vogal");
+				break;
+			default:
+				System.out.println("Essa é uma consoante");
+			}
 		}
 	}
+	//ok
 }

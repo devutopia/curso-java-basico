@@ -22,14 +22,13 @@ public class Exer08 {
 		System.out.println("Informe o preço 3º produto");
 		double produto3 = scan.nextDouble();
 		
-		if(produto1 < produto2 && produto1 < produto3){
+		if(produto1 <= produto2 && produto1 <= produto3){
 			System.out.println("O melhor preço é do 1º produto");
-		} else if(produto2 < produto1 && produto2 < produto3){
+		} else if(produto2 <= produto1 && produto2 <= produto3){
 			System.out.println("O melhor preço é do 2º produto");
 		} else {
 			System.out.println("O melhor preço é do 3º produto");
 		}
-
 	}
-
+	//ok
 }

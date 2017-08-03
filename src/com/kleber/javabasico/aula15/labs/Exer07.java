@@ -35,4 +35,5 @@ public class Exer07 {
 		}
 		System.out.println("O maior valor é " + maior + " o menor valor é " + menor);
 	}
+	//ok
 }

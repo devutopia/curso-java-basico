@@ -14,7 +14,7 @@ public class Exer03 {
 		scan = new Scanner(System.in);
 		
 		System.out.println("Informe seu sexo (M - F)");
-		String sexo = scan.nextLine();
+		String sexo = scan.next();
 		
 		//Pesquisar if else com Strings
 		if (sexo.equalsIgnoreCase("M")){
@@ -32,5 +32,5 @@ public class Exer03 {
 		default: System.out.println("Sexo Inválido"); break;
 		}
 	}
-
+	//ok
 }
