@@ -33,7 +33,7 @@ public class Exer13 {
 		case 7: System.out.println("Sábado");
 			break;
 		default: System.out.println("Valor inválido");
-			break;
 		}
 	}
+	//ok
 }

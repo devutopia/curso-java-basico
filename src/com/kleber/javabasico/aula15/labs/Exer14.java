@@ -18,41 +18,44 @@ correspondente e a mensagem “APROVADO” se o conceito for
 A, B ou C ou “REPROVADO” se o conceito for D ou E.*/
 
 public class Exer14 {
-	
+
 	private static Scanner scan;
 
 	public static void main(String[] args) {
-		
+
 		scan = new Scanner(System.in);
-		
+
 		System.out.println("Entre com as 2 notas do aluno: (n1 n2)");
 		double nota1 = scan.nextDouble();
 		double nota2 = scan.nextDouble();
+
 		double media = (nota1 + nota2) / 2;
-		char conceito = ' ';
-		String msg = null;
-		
-		if (media >= 9 && media <= 10){
-			conceito = 'A';
-			msg = "APROVADO";
-		}else if(media >= 7.5 && media < 9){
-			conceito = 'B';
-			msg = "APROVADO";
-		}else if(media >= 6.0 && media < 7.5){
-			conceito = 'C';
-			msg = "APROVADO";
-		}else if(media >= 4.0 && media < 6.0){
-			conceito = 'D';
-			msg = "REPROVADO";
-		}else if(media < 4.0){
-			conceito = 'E';
-			msg = "REPROVADO";
+
+		String conceito = "";
+
+		if (media >= 9 && media <= 10) {
+			conceito = "A";
+		} else if (media >= 7.5 && media < 9) {
+			conceito = "B";
+		} else if (media >= 6.0 && media < 7.5) {
+			conceito = "C";
+		} else if (media >= 4.0 && media < 6.0) {
+			conceito = "D";
+		} else if (media < 4.0) {
+			conceito = "E";
 		}
-		
+
 		System.out.println("Nota 1   : " + nota1);
 		System.out.println("Nota 2   : " + nota2);
 		System.out.println("Média    : " + media);
 		System.out.println("Conceito : " + conceito);
-		System.out.println("Situação : " + msg);
+		
+		switch (conceito.toLowerCase()) {
+			case "a":
+			case "b":
+			case "c": System.out.println("APROVADO"); break;
+			case "d":
+			case "e": System.out.println("APROVADO"); break;
+		}
 	}
 }

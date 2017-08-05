@@ -19,22 +19,27 @@ public class Exer10 {
 		String msg = scan.nextLine();
 		
 		if (msg.equalsIgnoreCase("M")){
-			System.out.println("Matutino");
+			System.out.println("Bom dia!");
 		} else if(msg.equalsIgnoreCase("V")) {
-			System.out.println("Vespertino");
-		} else {
-			System.out.println("Noturno");
+			System.out.println("Boa tarde!");
+		} else if(msg.equalsIgnoreCase("N")) {
+			System.out.println("Boa noite!");
+		} else{
+			System.out.println("Valor inválido");
 		}
 				
 		switch (msg.toLowerCase()) {
 		case "m":
-			System.out.println("Matutino");
+			System.out.println("Bom dia!");
 			break;
 		case "v":
-			System.out.println("Vespertino");
+			System.out.println("Boa tarde!");
+			break;
+		case "n":
+			System.out.println("Boa noite!");
 			break;
 		default:
-			System.out.println("Noturno");
+			System.out.println("Valor inválido");
 			break;
 		}
 

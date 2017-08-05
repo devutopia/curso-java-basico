@@ -2,8 +2,6 @@ package com.kleber.javabasico.aula15.labs;
 
 import java.util.Scanner;
 
-import sun.security.util.AlgorithmDecomposer;
-
 /*Faça um Programa que peça os 3 lados de um triângulo. O programa
 deverá informar se os valores podem ser um triângulo. Indique, caso
 os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou
@@ -22,18 +20,30 @@ public class Exer15 {
 		
 		scan = new Scanner(System.in);
 		
-		System.out.println("Entre com os lados do triângulo: A B C");
-		double ladoA = scan.nextDouble();
-		double ladoB = scan.nextDouble();
-		double ladoC = scan.nextDouble();
+		System.out.println("Entre com lado A");
+		int ladoA = scan.nextInt();
 		
-		if(ladoA + ladoB < ladoC || ladoB + ladoC < ladoA ||
-				ladoA + ladoC < ladoB){
+		System.out.println("Entre com lado B");
+		int ladoB = scan.nextInt();
+		
+		System.out.println("Entre com lado C");
+		int ladoC = scan.nextInt();
+		
+		if(((ladoA + ladoB) > ladoC) || 
+				((ladoA + ladoC) > ladoB) ||
+				((ladoB + ladoC) > ladoA)){
+			
+			if(ladoA == ladoB && ladoA == ladoC && ladoB == ladoC){
+				System.out.println("Triângulo Equilátero");
+			}else if (ladoA != ladoB && ladoA != ladoC && ladoB != ladoC){
+				System.out.println("Triângulo Escaleno");
+			}else if(ladoA == ladoB || ladoA == ladoC || ladoB == ladoC){
+				System.out.println("Triângulo Isósceles");
+			}
+			
+		else {
 			System.out.println("Não é um triângulo, informe os valores corretamente!");
-		}else if(ladoA == ladoB && ladoA == ladoC && ladoB == ladoC);{
-			System.out.println("Triângulo Equilátero");
+			}
 		}
-
 	}
-
 }
