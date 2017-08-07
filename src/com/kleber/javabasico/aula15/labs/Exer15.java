@@ -40,10 +40,9 @@ public class Exer15 {
 			}else if(ladoA == ladoB || ladoA == ladoC || ladoB == ladoC){
 				System.out.println("Triângulo Isósceles");
 			}
-			
-		else {
+		}else {
 			System.out.println("Não é um triângulo, informe os valores corretamente!");
-			}
 		}
+		
 	}
 }
