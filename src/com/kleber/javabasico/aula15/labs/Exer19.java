@@ -47,7 +47,7 @@ public class Exer19 {
 		}
 		
 		if (valida){
-			if (resultado <= 0){
+			if (resultado >= 0){
 				System.out.println("Resultado positivo: " + resultado);
 			} else{
 				System.out.println("Resultado negativo:" + resultado);
@@ -57,6 +57,6 @@ public class Exer19 {
 			} else{
 				System.out.println("Número impar");
 			}
-		}	
+		}
 	}
 }
