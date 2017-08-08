@@ -30,16 +30,25 @@ public class Exer22 {
 		double precoMaca = 0;
 		
 		if (kgMorango <= 5){
-			precoMorango = 2.5;
+			precoMorango = kgMorango * 2.5;
 		}else{
-			precoMorango = 2.2;
+			precoMorango = kgMorango * 2.2;
+		}
+				
+		if (kgMaca <= 5){
+			precoMaca = kgMaca * 1.8;
+		}else{
+			precoMaca = kgMaca * 1.5;
 		}
 		
-		if (kgMaca <= 5){
-			precoMaca = 1.8;
-		}else{
-			precoMaca = 1.5;
+		double valorParcial = precoMorango + precoMaca;
+		double valorPagar = valorParcial;
+		
+		if ((kgMorango + kgMaca) > 8 || valorParcial > 25){
+			valorPagar = valorParcial - ((valorParcial / 100) * 10);
 		}
+		
+		System.out.println("Valor à pagar R$ " + valorPagar);
 	}
 
 }
