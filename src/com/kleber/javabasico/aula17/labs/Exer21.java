@@ -20,6 +20,7 @@ public class Exer21 {
 		for (int i = 1; i <= numTurmas; i++){
 			
 			invalido = true;
+			
 			do{
 				System.out.println("Entre com a qtd de alunos da turma: " + i);
 				numAlunos = scan.nextInt();
@@ -32,7 +33,7 @@ public class Exer21 {
 				
 			} while (invalido);
 			
-			soma += numTurmas;
+			soma += numAlunos;
 		}
 	
 		double media = soma / numTurmas;
