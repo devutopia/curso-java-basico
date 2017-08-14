@@ -54,7 +54,7 @@ public class Exer25 {
 					System.out.println("Informe Preço do produto " + i);
 					preco = scan.nextDouble();
 					total += preco;
-					output += "Produto" + i + ": R$" + preco + "\n";
+					output += "Produto" + i + ": R$ " + preco + "\n";
 					
 				}
 				output += "Total: R$ " + total;
