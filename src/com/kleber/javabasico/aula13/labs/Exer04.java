@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class Exer04 {
 
+	private static Scanner scan;
+
 	public static void main(String[] args) {
 		
-		Scanner scan = new Scanner(System.in);
+		scan = new Scanner(System.in);
 		
 		System.out.println("Digite as 4 notas do bimestre. Utilize (,) vírgula para separar os decimais.");
 		

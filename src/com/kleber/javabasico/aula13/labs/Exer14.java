@@ -9,9 +9,11 @@ public class Exer14 {
 	informe o tempo aproximado de download do arquivo usando este link
 	(em minutos)*/
 
+	private static Scanner scan;
+
 	public static void main(String[] args) {
 		
-		Scanner scan = new Scanner(System.in);
+		scan = new Scanner(System.in);
 		
 		System.out.println("Inform o tamanho do arquivo:");
 		double tamArquivo  = scan.nextDouble();

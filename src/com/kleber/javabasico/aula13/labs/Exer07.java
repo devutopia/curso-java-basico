@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class Exer07 {
 
+	private static Scanner scan;
+
 	public static void main(String[] args) {
 		
-		Scanner scan = new Scanner(System.in);
+		scan = new Scanner(System.in);
 		
 		System.out.println("Informe o valor de um lado do quadrado: ");
 		

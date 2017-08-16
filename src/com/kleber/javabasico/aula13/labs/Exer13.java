@@ -20,9 +20,11 @@ public class Exer13 {
 	Liquido : R$
 	Obs.: Salário Bruto - Descontos = Salário Líquido.*/
 
+	private static Scanner scan;
+
 	public static void main(String[] args) {
 		
-		Scanner scan = new Scanner(System.in);
+		scan = new Scanner(System.in);
 		
 		System.out.println("Qual o valor/hora trabalhada?");
 		double valorHora = scan.nextDouble();

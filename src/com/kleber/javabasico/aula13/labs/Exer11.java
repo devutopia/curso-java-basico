@@ -10,9 +10,11 @@ public class Exer11 {
 	b. a soma do triplo do primeiro com o terceiro.
 	c. o terceiro elevado ao cubo*/
 
+	private static Scanner scan;
+
 	public static void main(String[] args) {
 		
-		Scanner scan = new Scanner(System.in);
+		scan = new Scanner(System.in);
 		
 		System.out.println("Entre com o primeiro número inteiro: ");
 		
