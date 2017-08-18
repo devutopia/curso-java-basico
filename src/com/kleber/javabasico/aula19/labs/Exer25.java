@@ -2,7 +2,7 @@ package com.kleber.javabasico.aula19.labs;
 
 import java.util.Scanner;
 
-public class Exer20 {
+public class Exer25 {
 	
 	public static Scanner scan;
 	
@@ -13,5 +13,5 @@ public class Exer20 {
 		
 
 	}
-
+	
 }
