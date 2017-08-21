@@ -22,19 +22,19 @@ public static Scanner scan;
 		double[] notas2 = new double[notas1.length];
 		double[] result = new double[notas1.length];
 		
-		for(int i = 0; i < notas1.length; i++){
+		for(int i=0; i < notas1.length; i++){
 			System.out.println("Informe a Nota1 do aluno " + (i+1));
 			notas1[i] = scan.nextDouble();
 		}
 				
-		for(int i = 0; i < notas2.length; i++){
+		for(int i=0; i < notas2.length; i++){
 			System.out.println("Informe a Nota2 do aluno " + (i+1));
 			notas2[i] = scan.nextDouble();
 		}
 		
-		for(int i = 0; i < result.length; i++){
+		for(int i=0; i < result.length; i++){
 			
-			result[i] = (notas1[i]+notas2[i])/2;
+			result[i] = (notas1[i]+notas2[i]) / 2;
 			
 			if(result[i] >= 7){
 				System.out.println("Média do aluno " + (i+1) + " = " + result[i] + " APROVADO!" );

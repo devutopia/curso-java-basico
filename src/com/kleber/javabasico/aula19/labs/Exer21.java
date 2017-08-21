@@ -10,7 +10,7 @@ public class Exer21 {
 		
 		scan = new Scanner(System.in);
 		
-		
+		//Não existe na lista
 
 	}
 
