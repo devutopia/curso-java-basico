@@ -10,7 +10,7 @@ public class Exer22 {
 	public static void main(String[] args) {
 		
 		int[] vetorA = new int[10];
-		int qtd0 = 1;
+		int qtd0 = 0;
 		int qtd1 = 0;
 		
 		for (int i=0; i<vetorA.length; i++){

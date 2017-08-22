@@ -1,12 +1,13 @@
 package com.kleber.javabasico.aula19.labs;
 
 /**Ler um vetor A com 20 elementos. 
- * Construir dois vetores B e C, sendo que nos vetor B e C serão armazenados 
- * o valores pares e ímpares de A, respectivamente.*/
+ * Separar os elementos pares e ímpares de A utilizando apenas um vetor extra B. 
+ * Sugestão: no início do vetor B armazene os elementos pares de A e nas posições
+ * restantes do vetor B armazene os elementos de A que são ímpares*/
 
 import java.util.Scanner;
 
-public class Exer30 {
+public class Exer31 {
 
 	public static Scanner scan;
 	
@@ -15,9 +16,8 @@ public class Exer30 {
 		scan = new Scanner(System.in);
 		
 		int[] vetorA = new int[20];
-		int[] vetorB = new int[vetorA.length]; //pares
-		int[] vetorC = new int[vetorA.length]; //impares
-
+		int[] vetorB = new int[vetorA.length]; 
+		
 		for (int i=0; i<vetorA.length; i++){
 			
 			System.out.println("Entre com o valor de A" + i);
@@ -25,15 +25,18 @@ public class Exer30 {
 		}
 		
 		int posB = 0;
-		int posC = 0;
 		
 		for (int i=0; i<vetorA.length; i++){
 			if (vetorA[i] % 2 == 0){
 				vetorB[posB] = vetorA[i];
 				posB++;
-			} else {
-				vetorC[posC] = vetorA[i];
-				posC++;
+			}
+		}
+		
+		for (int i=0; i<vetorA.length; i++){
+			if (vetorA[i] % 2 != 0){
+				vetorB[posB] = vetorA[i];
+				posB++;
 			}
 		}
 		
@@ -47,11 +50,8 @@ public class Exer30 {
 		for(int i=0; i<posB; i++){
 			System.out.print(vetorB[i] + " ");
 		}
-		System.out.println();
 		
-		System.out.print("Vetor C = ");
-		for(int i=0; i<posC; i++){
-			System.out.print(vetorC[i] + " ");
-		}
+
 	}
+	
 }
