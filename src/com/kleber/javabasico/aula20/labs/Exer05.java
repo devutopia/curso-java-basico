@@ -110,6 +110,7 @@ public class Exer05 {
 				dia--;
 				System.out.println("O compromisso agendado é: ");
 				System.out.println(compromissos[mes][dia][hora]);
+				System.out.println();
 				
 			} else if (opcao == 0) {
 				sair = true;
