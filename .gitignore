@@ -47,3 +47,9 @@ Temporary Items
 .apdisk
 *.class
 bin/_gitignore
+
+# Files add que não quero que subam para o repositório remoto :D
+.project
+*.iml
+.idea
+.settings
