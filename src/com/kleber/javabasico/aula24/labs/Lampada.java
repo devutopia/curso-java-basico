@@ -7,10 +7,12 @@ package com.kleber.javabasico.aula24.labs;
 
 public class Lampada {
 	
-	String tipo;
-	String voltagem;
-	String potencia;
-	double preco;
+	String modelo;
+	String tipoLuz;
+	String tensao;
+	int potencia;
 	int quantidade;
-
+	int garantiaMeses;
+	String tipos[];
+	double preco;
 }
