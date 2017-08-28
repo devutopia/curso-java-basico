@@ -1,0 +1,32 @@
+package com.kleber.javabasico.aula27;
+
+import com.kleber.javabasico.aula27.Carro;
+
+public class TesteCarro {
+
+	public static void main(String[] args) {
+
+		Carro van = new Carro();
+		van.marca = "Fiat";
+		van.modelo = "Ducato";
+		van.numPassageiros = 10;
+		van.capCombustivel = 100;
+		van.consCombustivel = 0.2;
+		
+		System.out.println(van.marca);
+		System.out.println(van.modelo);
+		
+		van.exibirAutonomia();
+		
+		double autonomia = van.obterAutonomia();
+		System.out.println("Autonomia do carro é: " + autonomia);
+		System.out.println("Autonomia do carro é: " + van.obterAutonomia());
+		
+		double qtdCombustivel10 = van.calculaCombustivel(10);
+		double qtdCombustivel15 = van.calculaCombustivel(15);
+		
+		System.out.println("qtdCombustivel10 = " + qtdCombustivel10);
+		System.out.println("qtdCombustivel15 = " + qtdCombustivel15);
+	}
+
+}
