@@ -8,9 +8,17 @@ public class Exer01 {
 		
 		lampada.tipoLuz = "branca";
 		
-		lampada.ligarLampada(true);
+		lampada.ligar();
 		
-		lampada.ligarLampada(false);
+		lampada.mostrarEstado();
+		
+		lampada.desligar();
+		
+		lampada.mostrarEstado();
+		
+		lampada.mudarEstado();
+		
+		lampada.mostrarEstado();
 	}
 
 }

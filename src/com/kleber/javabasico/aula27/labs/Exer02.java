@@ -15,11 +15,12 @@ public class Exer02 {
 		conta.agencia = "1992";
 		conta.numero = "16686-3";
 		conta.especial = true;
-		conta.saldo = 500;
-		conta.limiteEspecial = 1000;
+		conta.saldo = -10;
+		conta.valorEspecialUsado = 0;
+		conta.limiteEspecial = 500;
 	
 		
-		int opcao = 0;
+		/*int opcao = 0;
 		boolean escolha = true;
 		double valorDeposito = 0;
 		double valorSaque = 0;
@@ -49,6 +50,42 @@ public class Exer02 {
 				System.out.println("Obrigado por usar nosso sistema!");
 				escolha = false;
 			}
+		}*/
+		
+		boolean saqueEfetuado = conta.realizarSaque(10);
+		
+		if (saqueEfetuado){
+			System.out.println("Saque realizado com sucesso");
+			conta.consultarSaldo();
+		} else {
+			System.out.println("Não foi possivel realizar o saque. Saldo insuficiente.");
+		}
+			
+		saqueEfetuado = conta.realizarSaque(500);
+		System.out.println("Tentativa de saque de 500");
+		if (saqueEfetuado){
+			System.out.println("Saque realizado com sucesso");
+			conta.consultarSaldo();
+		} else {
+			System.out.println("Não foi possivel realizar o saque. Saldo insuficiente.");
+		}
+		
+		System.out.println("Depósito de 500 reais");
+		conta.depositar(500);
+		conta.consultarSaldo();
+		
+		if (conta.verificarUsoChequeEspecial()){
+			System.out.println("Esta usando cheque especial");
+		} else {
+			System.out.println("Não está usando cheque especial");
+		}
+		
+		conta.realizarSaque(500);
+		conta.consultarSaldo();
+		if (conta.verificarUsoChequeEspecial()){
+			System.out.println("Esta usando cheque especial");
+		} else {
+			System.out.println("Não está usando cheque especial");
 		}
 		
 

@@ -4,7 +4,6 @@ package com.kleber.javabasico.aula27.labs;
  * Desenvolva métodos para ligar, desligar a lampada.*/
 
 public class Lampada {
-	
 		
 	String modelo;
 	String tipoLuz;
@@ -14,10 +13,13 @@ public class Lampada {
 	int garantiaMeses;
 	String tipos[];
 	double preco;
+	boolean estadoLampada;
 	
-	void ligarLampada (boolean ligarLampada){
+	// Método criado por mim em um único bloco.
+	
+	/*void ligarLampada (boolean ligarLampada){
 		
-		boolean estadoLampada = ligarLampada;
+		estadoLampada = ligarLampada;
 		
 		if (!estadoLampada){
 			estadoLampada = false;
@@ -25,5 +27,33 @@ public class Lampada {
 		} else {
 			System.out.println("Lampada ligada");
 		}
+	}*/
+	
+	//Métodos da correção.
+	
+	void ligar(){
+		estadoLampada = true;
 	}
+	
+	void desligar(){
+		estadoLampada = false;
+	}
+	
+	void mostrarEstado(){
+		if (estadoLampada){
+			System.out.println("Lâmpada está ligada");
+		} else {
+			System.out.println("Lâmpada está desligada");
+		}
+	}
+	
+	void mudarEstado(){
+		if(estadoLampada){
+			desligar();
+		} else {
+			ligar();
+		}
+	}
+	
+	
 }
