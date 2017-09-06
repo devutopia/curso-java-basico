@@ -1,14 +1,14 @@
 package com.kleber.javabasico.aula27.labs;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Exer02 {
 
-	private static Scanner scan;
+	//private static Scanner scan;
 
 	public static void main(String[] args) {
 		
-		scan = new Scanner(System.in);
+		//scan = new Scanner(System.in);
 		
 		ContaCorrente conta = new ContaCorrente();
 		
