@@ -2,8 +2,13 @@ package com.kleber.javabasico.aula27.labs;
 
 public class JogoDaVelha {
 		
-		char[][] jogoVelha = new char[3][3];
-	    int jogada = 1;
+		char[][] jogoVelha;
+	    int jogada;
+	    
+	    public JogoDaVelha() {
+	    	jogoVelha = new char[3][3];
+		    jogada = 1;
+		}
 
 	    boolean validarJogada(int linha, int coluna, char sinal) {
 
