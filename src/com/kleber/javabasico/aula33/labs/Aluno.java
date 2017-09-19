@@ -4,38 +4,91 @@ public class Aluno {
 	
 	private String nomeAluno;
 	private String matricula;
-	private String curso;
-	private String[] disciplinas;
-	private double[] notas;
+	private String nomeCurso;
+	private String[] nomeDisciplinas;
+	private double[][] notasDisciplinas;
+	
+	public Aluno() {
+	}
+	
+	public Aluno(String nomeAluno, String matricula, String nomeCurso, String[] nomeDisciplinas,
+			double[][] notasDisciplinas) {
+		this.nomeAluno = nomeAluno;
+		this.matricula = matricula;
+		this.nomeCurso = nomeCurso;
+		this.nomeDisciplinas = nomeDisciplinas;
+		this.notasDisciplinas = notasDisciplinas;
+	}
+
+	/**
+	 * @return the nomeAluno
+	 */
 	public String getNomeAluno() {
 		return nomeAluno;
 	}
+
+	/**
+	 * @param nomeAluno the nomeAluno to set
+	 */
 	public void setNomeAluno(String nomeAluno) {
 		this.nomeAluno = nomeAluno;
 	}
+
+	/**
+	 * @return the matricula
+	 */
 	public String getMatricula() {
 		return matricula;
 	}
+
+	/**
+	 * @param matricula the matricula to set
+	 */
 	public void setMatricula(String matricula) {
 		this.matricula = matricula;
 	}
-	public String getCurso() {
-		return curso;
+
+	/**
+	 * @return the nomeCurso
+	 */
+	public String getNomeCurso() {
+		return nomeCurso;
 	}
-	public void setCurso(String curso) {
-		this.curso = curso;
+
+	/**
+	 * @param nomeCurso the nomeCurso to set
+	 */
+	public void setNomeCurso(String nomeCurso) {
+		this.nomeCurso = nomeCurso;
 	}
-	public String[] getDisciplinas() {
-		return disciplinas;
+
+	/**
+	 * @return the nomeDisciplinas
+	 */
+	public String[] getNomeDisciplinas() {
+		return nomeDisciplinas;
 	}
-	public void setDisciplinas(String[] disciplinas) {
-		this.disciplinas = disciplinas;
+
+	/**
+	 * @param nomeDisciplinas the nomeDisciplinas to set
+	 */
+	public void setNomeDisciplinas(String[] nomeDisciplinas) {
+		this.nomeDisciplinas = nomeDisciplinas;
 	}
-	public double[] getNotas() {
-		return notas;
+
+	/**
+	 * @return the notasDisciplinas
+	 */
+	public double[][] getNotasDisciplinas() {
+		return notasDisciplinas;
 	}
-	public void setNotas(double[] notas) {
-		this.notas = notas;
+
+	/**
+	 * @param notasDisciplinas the notasDisciplinas to set
+	 */
+	public void setNotasDisciplinas(double[][] notasDisciplinas) {
+		this.notasDisciplinas = notasDisciplinas;
 	}
+
 
 }
