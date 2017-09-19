@@ -9,6 +9,8 @@ public class Aluno {
 	private double[][] notasDisciplinas;
 	
 	public Aluno() {
+		this.nomeDisciplinas = new String[3];
+		this.notasDisciplinas = new double[3][4];
 	}
 	
 	public Aluno(String nomeAluno, String matricula, String nomeCurso, String[] nomeDisciplinas,
@@ -16,8 +18,8 @@ public class Aluno {
 		this.nomeAluno = nomeAluno;
 		this.matricula = matricula;
 		this.nomeCurso = nomeCurso;
-		this.nomeDisciplinas = nomeDisciplinas;
-		this.notasDisciplinas = notasDisciplinas;
+		this.nomeDisciplinas = new String[3];
+		this.notasDisciplinas = new double[3][4];
 	}
 
 	/**
@@ -88,6 +90,48 @@ public class Aluno {
 	 */
 	public void setNotasDisciplinas(double[][] notasDisciplinas) {
 		this.notasDisciplinas = notasDisciplinas;
+	}
+	
+	public void mostrarInfo(){
+		System.out.println("Nome: " + this.nomeAluno);
+		System.out.println("Matrícula: " + this.matricula);
+		System.out.println("Curso: " + this.nomeCurso);
+		
+		for (int i=0; i < this.notasDisciplinas.length; i++){
+			System.out.println("Notas da disciplina " + this.nomeDisciplinas[i]);
+			for (int j=0; j < this.notasDisciplinas[i].length; j++){
+				System.out.print(this.notasDisciplinas[i][j] + " | ");
+			}
+			System.out.println();
+		}
+	}
+	
+	public boolean verificarAprovado(int indice){
+		if (obterMedia(indice) >=7){
+			return true;
+		}
+		return false;
+	}
+	
+	public double obterMedia (int indice){
+		double soma=0;
+		
+		for(int i=0; i<this.notasDisciplinas[indice].length; i++){
+			soma += this.notasDisciplinas[indice][i];
+		}
+		
+		double media = soma / 4;
+		
+		return media;
+		
+	}
+	
+	public void setNomeDisciplinaPos(int pos, String nomeDisciplina){
+		this.nomeDisciplinas[pos] = nomeDisciplina;
+	}
+	
+	public void setNotaDisciplinaPosIJ (int posI, int posJ, double nota){
+		this.notasDisciplinas[posI][posJ] = nota;
 	}
 
 
