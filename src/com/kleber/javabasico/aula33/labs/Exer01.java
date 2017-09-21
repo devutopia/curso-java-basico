@@ -7,7 +7,7 @@ public class Exer01 {
 		Lampada lamp = new Lampada();
 		
 		lamp.setModelo("Fluorescente");
-		lamp.getModelo();
+		System.out.println(lamp.getModelo());
 		
 		lamp.desligar();
 		

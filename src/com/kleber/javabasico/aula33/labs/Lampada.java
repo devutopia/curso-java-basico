@@ -100,24 +100,24 @@ public class Lampada {
 		this.estadoLampada = estadoLampada;
 	}
 
-	public void ligar(){
-		this.estadoLampada = true;
+	public void ligar() {
+		setEstadoLampada(true);
 	}
 	
-	public void desligar(){
-		this.estadoLampada = false;
+	public void desligar() {
+		setEstadoLampada(false);
 	}
 	
-	public void mostrarEstado(){
-		if (estadoLampada){
+	public void mostrarEstado() {
+		if (isEstadoLampada()){
 			System.out.println("Lâmpada está ligada");
 		} else {
 			System.out.println("Lâmpada está desligada");
 		}
 	}
 	
-	public void mudarEstado(){
-		if(estadoLampada){
+	public void mudarEstado() {
+		if(isEstadoLampada()){
 			desligar();
 		} else {
 			ligar();
