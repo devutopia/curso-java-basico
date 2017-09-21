@@ -14,7 +14,6 @@ public class JogoDaVelha {
 
 	        if (jogoVelha[linha][coluna] == 'X' || jogoVelha[linha][coluna] == 'O') {
 	            return false;
-
 	        } else { //jogada válida
 	            jogoVelha[linha][coluna] = sinal;
 	            jogada++;
