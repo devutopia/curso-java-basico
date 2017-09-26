@@ -14,6 +14,8 @@ public class Exer02 {
 		conta.setValorEspecialUsado(0);
 		conta.setLimiteEspecial(500);
 		
+		System.out.println("Saldo da conta " + conta.getNumero() + " = " + conta.getSaldo());
+		
 		boolean saqueEfetuado = conta.realizarSaque(500);
 
 		if (saqueEfetuado) {
@@ -51,5 +53,4 @@ public class Exer02 {
 		}
 
 	}
-
 }

@@ -38,20 +38,13 @@ public class JogoDaVelha {
 		this.jogada = jogada;
 	}
 	
-	public boolean vezJogador1(){
-		if (this.jogada % 2 == 1){
-			return true;
-		}
-		return false;
-	}
-	
 	public boolean validarJogada(int linha, int coluna, char sinal) {
 
         if (jogoDaVelha[linha][coluna] == 'X' || jogoDaVelha[linha][coluna] == 'O') {
             return false;
         } else { //jogada válida
             jogoDaVelha[linha][coluna] = sinal;
-            setJogada(jogada++);
+            this.jogada++;
             return true;
         }
     }
@@ -77,5 +70,12 @@ public class JogoDaVelha {
             return true;
         }
         return false;
+	}
+	
+	public boolean vezJogador1(){
+		if (this.jogada % 2 == 1){
+			return true;
+		}
+		return false;
 	}
 }

@@ -92,11 +92,11 @@ public class ContaCorrente {
 	public boolean realizarSaque(double quantiaASacar){
 		
 		//tem saldo na conta
-		if(this.saldo >= quantiaASacar){
+		if(getSaldo() >= quantiaASacar){
 			this.saldo -=quantiaASacar;
 			return true;
 		} else { //não tem saldo na conta
-			if (this.especial){
+			if (isEspecial()){
 				//verificar se o limite especial tem saldo
 				double limite = this.limiteEspecial + this.saldo;
 				if (limite >= quantiaASacar){
@@ -120,7 +120,7 @@ public class ContaCorrente {
 	}
 	
 	public boolean verificarUsoChequeEspecial(){
-		return saldo < 0;
+		return this.saldo < 0;
 	}
 
 }

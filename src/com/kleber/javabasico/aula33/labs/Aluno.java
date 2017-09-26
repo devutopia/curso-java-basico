@@ -113,7 +113,7 @@ public class Aluno {
 		return false;
 	}
 	
-	public double obterMedia (int indice){
+	private double obterMedia (int indice){
 		double soma=0;
 		
 		for(int i=0; i<this.notasDisciplinas[indice].length; i++){
