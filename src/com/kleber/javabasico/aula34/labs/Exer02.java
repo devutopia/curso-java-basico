@@ -14,9 +14,9 @@ public class Exer02 {
 		
 		imprimirTela(Calculadora.multiplicar(2, 5));
 		
-		imprimirTela(Calculadora.dividir(10, 2));
+		imprimirTela(Calculadora.dividir(10, 1));
 		
-		imprimirTela(Calculadora.elevarPot(3, 3));
+		imprimirTela(Calculadora.elevarPot(2, 3));
 
 	}
 }

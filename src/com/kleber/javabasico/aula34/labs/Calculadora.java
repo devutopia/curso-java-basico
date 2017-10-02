@@ -41,9 +41,20 @@ public class Calculadora {
 		return getResultOperacao();
 	}
 	
+	//x^n
+	//x*x*x*x* (n vezes)
 	public static double elevarPot (double base, double potencia){
-		setResultOperacao(Math.pow(base, potencia));
-		return getResultOperacao();
+	
+		//1º método
+		/*	setResultOperacao(Math.pow(base, potencia));
+		return getResultOperacao();*/
+		
+		//2º método
+		double total = 1;
+		for (int i=1; i <= potencia; i++){
+			total *= base;
+		}
+		return total;
 	}
 	
 	//5! = 5 * 4 * 3 * 2 * 1 = 120
