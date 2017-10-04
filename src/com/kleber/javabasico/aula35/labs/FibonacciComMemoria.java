@@ -29,7 +29,7 @@ public class FibonacciComMemoria {
 		memoria[0] = 0;
 		memoria[1] = 1;
 		
-		for (int i=1;i<TAM_MEMORIA; i++){
+		for (int i=0;i<TAM_MEMORIA; i++){
 			System.out.println("Fibonacci de " + i + ": " + fibonacci(i));
 		}
 	}
