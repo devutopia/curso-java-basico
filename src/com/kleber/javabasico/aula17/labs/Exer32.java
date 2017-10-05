@@ -30,7 +30,7 @@ public class Exer32 {
 		
 		do {
 			
-			System.out.println("Digite o código e a quantidade. Digite 0 0 para sair");
+			System.out.println("Digite o código e a quantidade. Digite 0 para sair");
 			cod = scan.nextInt();
 			qtd = scan.nextInt();
 			
