@@ -11,10 +11,11 @@ public class Exer01 {
 		scan = new Scanner(System.in);
 		
 		Agenda agenda = new Agenda();
-		Contato[] contatos = new Contato[3];
-		
+				
 		System.out.println("Entre com o nome da agenda");
-		agenda.setNomeAgenda(scan.next());
+		agenda.setNomeAgenda(scan.nextLine());
+		
+		Contato[] contatos = new Contato[3];
 		
 		for (int i = 0; i<3; i++){
 			System.out.println("Entre com as informações do contato " + (i+1));

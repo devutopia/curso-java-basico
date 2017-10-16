@@ -11,7 +11,6 @@ public class Agenda {
 	 * @param nomeAgenda
 	 */
 	public Agenda(String nomeAgenda) {
-		super();
 		this.nomeAgenda = nomeAgenda;
 	}
 
