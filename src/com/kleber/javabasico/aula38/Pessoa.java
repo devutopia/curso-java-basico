@@ -1,4 +1,4 @@
-package com.kleber.javabasico.aula37;
+package com.kleber.javabasico.aula38;
 
 public class Pessoa {
 	
@@ -8,6 +8,23 @@ public class Pessoa {
 	private String cpf;
 	private String telefoneCelular;
 	
+	public Pessoa(){
+		
+	}
+	
+	/**
+	 * @param nome
+	 * @param endereco
+	 * @param telefone
+	 */
+	public Pessoa(String nome, String endereco, String telefone) {
+		super();
+		this.nome = nome;
+		this.endereco = endereco;
+		this.telefone = telefone;
+	}
+
+
 	public String getNome() {
 		return nome;
 	}
@@ -44,7 +61,4 @@ public class Pessoa {
 	public void setTelefoneCelular(String telefoneCelular) {
 		this.telefoneCelular = telefoneCelular;
 	}
-	
-	
-
 }
