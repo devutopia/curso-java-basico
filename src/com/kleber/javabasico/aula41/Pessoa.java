@@ -1,14 +1,12 @@
-package com.kleber.javabasico.aula39;
+package com.kleber.javabasico.aula41;
 
-public class Pessoa {
+public abstract class Pessoa {
 	
 	private String nome;
 	private String endereco;
 	private String telefone;
 	private String cpf;
 	private String telefoneCelular;
-	
-	protected String nomeVisibilidade;
 	
 	public Pessoa(){
 		
@@ -63,18 +61,8 @@ public class Pessoa {
 	public void setTelefoneCelular(String telefoneCelular) {
 		this.telefoneCelular = telefoneCelular;
 	}
-
-	/**
-	 * @return the nomeVisibilidade
-	 */
-	public String getNomeVisibilidade() {
-		return nomeVisibilidade;
-	}
-
-	/**
-	 * @param nomeVisibilidade the nomeVisibilidade to set
-	 */
-	public void setNomeVisibilidade(String nomeVisibilidade) {
-		this.nomeVisibilidade = nomeVisibilidade;
-	}
+	
+	public abstract String obterEtiquetaEndereco();
+	
+	public abstract void imprimirEtiquetaEndereco();
 }
