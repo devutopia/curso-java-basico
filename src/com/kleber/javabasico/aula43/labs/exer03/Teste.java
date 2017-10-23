@@ -1,0 +1,39 @@
+package com.kleber.javabasico.aula43.labs.exer03;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		Animal camelo = new Animal();
+		camelo.setNome("Camelo");
+		camelo.setComprimento(150);
+		camelo.setAmbiente("Terra");
+		camelo.setCor("Amarelo");
+		camelo.setVelocidade(2.0);
+		
+		Peixe tubarao = new Peixe();
+		tubarao.setNome("Tubarão");
+		tubarao.setComprimento(300);
+		tubarao.setVelocidade(1.5);
+		
+		Mamifero ursoDoCanada = new Mamifero();
+		ursoDoCanada.setNome("Urso-do-canadá");
+		ursoDoCanada.setComprimento(180);
+		ursoDoCanada.setCor("Vermelho");
+		ursoDoCanada.setVelocidade(0.5);
+		
+		Animal[] animais = new Animal[3];
+		animais[0] = camelo;
+		animais[1] = tubarao;
+		animais[2] = ursoDoCanada;
+		
+		System.out.println("Zoo: ");
+		System.out.println("----------------------");
+		for (Animal animal : animais) {
+			System.out.println(animal);
+			System.out.println("----------------------");
+		}
+
+	}
+
+}
