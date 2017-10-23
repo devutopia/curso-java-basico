@@ -25,11 +25,11 @@ public class PessoaFisica extends Contribuinte {
 		s += "Valor do imposto à pagar R$ = " + calcularImposto();
 		return s;
 	}
-	@Override
+	/*@Override
 	public double calcularImposto() {
-		double valorImposto =0;
+		double valorImposto=0;
 		
-		if (getRendaBruta() < 1400){
+		if (getRendaBruta() <= 1400){
 			valorImposto = 0;
 		} else if (getRendaBruta() > 1400 && getRendaBruta() <= 2100){
 			valorImposto = (getRendaBruta() * 10)/100;
@@ -41,5 +41,30 @@ public class PessoaFisica extends Contribuinte {
 			valorImposto = (getRendaBruta() * 30)/100;
 		}
 		return valorImposto;
+	}*/
+	
+	//Correção do exercício
+	
+	@Override
+	public double calcularImposto() {
+		double renda = this.getRendaBruta();
+		
+		if (renda <= 1400){
+			return 0;
+		} 
+		
+		else if (renda > 1400 && renda <= 2100){
+			return (renda * 0.1) - 100;
+		}  
+		
+		else if (renda > 1400 && renda<= 2800){
+			return (renda * 0.15) - 270;
+		} 
+		
+		else if (renda > 2800 && renda<= 3600){
+			return (renda * 0.25) - 500;
+		} 
+		// maior que 3600
+		return (renda * 0.3) - 700;
 	}
 }

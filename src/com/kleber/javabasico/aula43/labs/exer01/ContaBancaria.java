@@ -1,6 +1,6 @@
 package com.kleber.javabasico.aula43.labs.exer01;
 
-public abstract class ContaBancaria {
+public class ContaBancaria {
 	private String nomeCliente;
 	private String numConta;
 	private double saldo;

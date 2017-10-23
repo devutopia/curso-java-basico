@@ -29,7 +29,6 @@ public class PessoaJuridica extends Contribuinte {
 	}
 	@Override
 	public double calcularImposto() {
-		double valorImposto = (getRendaBruta() * ALIQUOTA)/100;
-		return valorImposto;
+		return (getRendaBruta() * ALIQUOTA)/100; 
 	}
 }

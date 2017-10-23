@@ -4,8 +4,8 @@ public class Teste {
 
 	public static void main(String[] args) {
 		
-		ContaBancaria contaSimples = new ContaBancaria() {
-		};
+		System.out.println("********Teste Conta simples********");
+		ContaBancaria contaSimples = new ContaBancaria();
 		
 		contaSimples.setNomeCliente("Cliente conta simples");
 		contaSimples.setNumConta("11111");
@@ -18,33 +18,46 @@ public class Teste {
 		
 		System.out.println(contaSimples);
 		
+		
+		System.out.println("********Teste Conta Especial********");
+		
 		ContaEspecial contaEspecial = new ContaEspecial();
 		
-		contaEspecial.setNomeCliente("João");
-		contaEspecial.setNumConta("123456");
-		contaEspecial.setLimite(500);
-		contaEspecial.setSaldo(10);
+		contaEspecial.setNomeCliente("Cliente conta especial");
+		contaEspecial.setNumConta("22222");
+		contaEspecial.setLimite(50);
+		contaEspecial.setSaldo(0);
 		
-		realizarSaque(contaEspecial, 15);
+		contaEspecial.depositar(100);
 		
-		contaEspecial.depositar(300);
+		realizarSaque(contaEspecial, 50);
 		
-		System.out.println(contaEspecial.toString() + "\nLimite especial R$ = " + contaEspecial.getLimite());
+		realizarSaque(contaEspecial, 70);
+		
+		realizarSaque(contaEspecial, 50);
+		
+		System.out.println(contaEspecial);
+		
+		System.out.println("********Teste Conta Poupança********");
 		
 		ContaPoupanca contaPoupanca = new ContaPoupanca();
 		
-		contaPoupanca.setNomeCliente("Joaquim");
-		contaPoupanca.setNumConta("112233");
-		contaPoupanca.setDiaRendimento(22);
+		contaPoupanca.setNomeCliente("Cliente conta poupança");
+		contaPoupanca.setNumConta("33333");
+		contaPoupanca.setDiaRendimento(23);
 		contaPoupanca.setSaldo(0);
 		
 		realizarSaque(contaPoupanca, 15);
 		
 		contaPoupanca.depositar(300);
 		
-		contaPoupanca.calcularNovoSaldo(1);
+		if (contaPoupanca.calcularNovoSaldo(0.5)){
+			System.out.println("Rendimento aplicado, novo saldo de = " + contaPoupanca.getSaldo());
+		} else {
+			System.out.println("Hoje não é dia de rendimento, novo saldo não calculado");
+		}
 		
-		System.out.println(contaPoupanca.toString());
+		System.out.println(contaPoupanca);
 	}
 	
 	private static void realizarSaque(ContaBancaria conta, double valor){

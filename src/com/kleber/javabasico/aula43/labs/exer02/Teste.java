@@ -44,8 +44,10 @@ public class Teste {
 		contribuintes[5] = p6;
 		
 		for (Contribuinte c : contribuintes) {
+			System.out.println("***************************************");
 			System.out.println(c.toString());
 		}
+		System.out.println("***************************************");
 		
 	}
 

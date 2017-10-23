@@ -1,6 +1,7 @@
 package com.kleber.javabasico.aula43.labs.exer02;
 
-public class Contribuinte {
+public abstract class Contribuinte {
+	
 	private String nome;
 	private String endereco;
 	private double rendaBruta;
@@ -37,13 +38,11 @@ public class Contribuinte {
 	public String toString() {
 		String s = "Contribuinte \n";
 		s += "Nome: " + nome + "\n";
-		s += "Endereço: " + endereco + "\n";
+		//s += "Endereço: " + endereco + "\n";
 		s += "Renda Bruta: " + rendaBruta + "\n";
 		return s;
 	}
 
-	public double calcularImposto() {
-		return 0;
-	}
+	public abstract double calcularImposto();
 	
 }

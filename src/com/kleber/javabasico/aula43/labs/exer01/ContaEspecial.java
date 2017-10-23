@@ -21,6 +21,14 @@ public class ContaEspecial extends ContaBancaria{
 	}
 	
 	@Override
+	public String toString() {
+		 String s = "Conta Especial\n";
+		 s +=  "Limite especial R$ = " + limite + "\n";
+		 s += super.toString();
+		 return s;
+	}
+	
+	@Override
 	public boolean sacar(double valorSaque) {
 		
 		double saldoComLimite = this.getSaldo() + limite;
