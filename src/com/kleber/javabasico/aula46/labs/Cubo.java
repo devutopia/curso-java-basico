@@ -1,17 +1,35 @@
 package com.kleber.javabasico.aula46.labs;
 
 public class Cubo extends Figura3D{
+	
+	private final double FACES = 6;
+	
+	private double lado;
+	
+	/**
+	 * @return the lado
+	 */
+	public double getLado() {
+		return lado;
+	}
+
+	/**
+	 * @param lado the lado to set
+	 */
+	public void setLado(double lado) {
+		this.lado = lado;
+	}
 
 	@Override
 	public double calcularArea() {
-		// TODO Auto-generated method stub
-		return 0;
+		//A=6*l2
+		return FACES * (lado * lado);
 	}
 
 	@Override
 	public double calcularVolume() {
-		// TODO Auto-generated method stub
-		return 0;
+		//V = a3;
+		return Math.pow(lado, 3);
 	}
 
 
