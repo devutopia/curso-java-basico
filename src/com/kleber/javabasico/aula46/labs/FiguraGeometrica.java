@@ -1,6 +1,6 @@
-package com.kleber.javabasico.aula46.labs.exer01;
+package com.kleber.javabasico.aula46.labs;
 
-public class FiguraGeometrica {
+public abstract class FiguraGeometrica {
 	
 	private String nome;
 	private String cor;
@@ -27,12 +27,5 @@ public class FiguraGeometrica {
 	 */
 	public void setCor(String cor) {
 		this.cor = cor;
-	}
-	
-	@Override
-	public String toString() {
-		String s = "Nome: " + this.nome;
-		s += "\nCor: " + this.cor;
-		return s;
 	}
 }
