@@ -44,7 +44,8 @@ public class Cilindro extends Figura3D  {
 		
 		//A = Ab + Al - calculo Total
 		double areaTotal = areaBase + areaLateral;
-				*/
+		*/
+		
 		//ou ainda, 2*π*r*(r + h) - calculo Total
 		double areaTotal = 2 * (Math.PI*raio*(raio+altura));
 		
