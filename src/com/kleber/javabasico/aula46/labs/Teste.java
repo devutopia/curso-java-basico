@@ -5,34 +5,28 @@ public class Teste {
 	public static void main(String[] args) {
 		
 		Circulo circulo = new Circulo();
-		circulo.setNome("Círculo");
-		circulo.setRaio(5);
+		circulo.setRaio(2);
 		
 		Quadrado quadrado = new Quadrado();
-		quadrado.setNome("Quadrado");
-		quadrado.setLado(10);
+		quadrado.setLado(2);
 		
 		Triangulo triangulo = new Triangulo();
-		triangulo.setNome("Triângulo");
-		triangulo.setBase(5);
-		triangulo.setAltura(10);
+		triangulo.setBase(3);
+		triangulo.setAltura(2);
 		
 		Cilindro cilindro = new Cilindro();
-		cilindro.setNome("Cilindro");
-		cilindro.setRaio(5);
-		cilindro.setAltura(10);
+		cilindro.setRaio(2);
+		cilindro.setAltura(3);
 		
 		Cubo cubo = new Cubo();
-		cubo.setNome("Cubo");
-		cubo.setLado(4);
+		cubo.setLado(3);
 		
 		Piramide piramide = new Piramide();
-		piramide.setNome("Piramide");
 		piramide.setAltura(3);
 		piramide.setApotema(4);
 		piramide.setArestaBase(2);
 		piramide.setNumPoliBase(4);
-		piramide.setBase(triangulo);
+		piramide.setBase(quadrado);
 		
 		FiguraGeometrica[] figuras = new FiguraGeometrica[6];
 		figuras[0] = circulo;

@@ -4,6 +4,10 @@ public class Triangulo extends Figura2D{
 
 	private double base;
 	private double altura;
+	
+	public Triangulo() {
+		super.setNome("Triângulo");
+	}
 		
 	/**
 	 * @return the base

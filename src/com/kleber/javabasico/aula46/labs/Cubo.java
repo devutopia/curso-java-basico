@@ -6,6 +6,10 @@ public class Cubo extends Figura3D{
 	
 	private double lado;
 	
+	public Cubo() {
+		super.setNome("Cubo");
+	}
+	
 	/**
 	 * @return the lado
 	 */

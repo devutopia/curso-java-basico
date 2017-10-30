@@ -8,6 +8,10 @@ public class Piramide extends Figura3D {
     private int numPoliBase;
     
     private Figura2D base;
+    
+    public Piramide() {
+    	super.setNome("Pirâmide");
+	}
 	
 	/**
 	 * @return the altura

@@ -6,6 +6,9 @@ public class Circulo extends Figura2D {
 	
 	private double raio;
 	
+	public Circulo() {
+		super.setNome("Circulo");
+	}
 	/**
 	 * @return the raio
 	 */

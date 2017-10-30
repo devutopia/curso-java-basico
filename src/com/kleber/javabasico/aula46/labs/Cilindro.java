@@ -5,6 +5,9 @@ public class Cilindro extends Figura3D  {
 	private double raio;
 	private double altura;
 	
+	public Cilindro() {
+		super.setNome("Cilindro");
+	}
 	/**
 	 * @return the raio
 	 */

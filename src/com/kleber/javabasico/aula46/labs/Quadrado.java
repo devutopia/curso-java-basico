@@ -4,6 +4,9 @@ public class Quadrado extends Figura2D{
 
 	private double lado;
 	
+	public Quadrado() {
+		super.setNome("Quadrado");	}
+	
 	/**
 	 * @return the lado
 	 */

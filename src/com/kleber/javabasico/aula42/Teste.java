@@ -9,7 +9,9 @@ public class Teste {
 		//Pessoa professor = new Professor();
 		Aluno aluno = new Aluno();
 		Professor professor = new Professor();
-
+		
+		//Exemplo do final
+		System.out.println(Constantes.URL_FACEBOOK);
+		//Constantes.URL_FACEBOOK="assdfasfafasdfa"; atributo do tipo final não pode ser modificado.
 	}
-
 }
