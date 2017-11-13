@@ -9,37 +9,17 @@ public class Agenda {
 	public Agenda() {
 		contatos = new Contato[5];
 	}
-
-	/**
-	 * @return the nomeAgenda
-	 */
-	public String getNomeAgenda() {
-		return nomeAgenda;
-	}
-
-	/**
-	 * @param nomeAgenda the nomeAgenda to set
-	 */
-	public void setNomeAgenda(String nomeAgenda) {
-		this.nomeAgenda = nomeAgenda;
-	}
-
-	/**
-	 * @return the contatos
-	 */
-	public Contato[] getContatos() {
-		return contatos;
-	}
-
-	/**
-	 * @param contatos the contatos to set
-	 */
-	public void setContatos(Contato[] contatos) {
-		this.contatos = contatos;
-	}
 	
-	public void adicionarContato(){
+	public void adicionarContato(Contato c) throws AgendaCheiaException {
 		
+		boolean cheia = true;
+		for(int i=0; i<contatos.length; i++){
+			if (contatos[i] == null){
+				contatos[i] = c;
+				cheia = false;
+				break;
+			}
+		}
 	}
 
 }

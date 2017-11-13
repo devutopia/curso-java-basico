@@ -9,6 +9,10 @@ public class Contato {
 	private String telefone;
 	private String email;
 	
+	public Contato() {
+		contador++;
+		this.id = contador;
+	}
 	/**
 	 * @return the id
 	 */
