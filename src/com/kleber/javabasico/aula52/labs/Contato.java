@@ -73,10 +73,10 @@ public class Contato {
 	 */
 	@Override
 	public String toString() {
-		String s = "Id: " + id;
-		s += "\nNome: " + nome;
-		s += "\nTelefone: " + telefone;
-		s += "\nEmail: " + email;
+		String s = "[Id: " + id;
+		s += "; Nome: " + nome;
+		s += "; Telefone: " + telefone;
+		s += "; Email: " + email + "]";
 		
 		return s;
 	}
