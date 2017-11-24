@@ -1,5 +1,6 @@
 package com.kleber.javabasico.aula52.labs;
 
+@SuppressWarnings("serial")
 public class ContatoNaoExisteException extends Exception{
 
 	private String nomeContato;

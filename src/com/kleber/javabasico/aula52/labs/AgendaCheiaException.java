@@ -1,5 +1,6 @@
 package com.kleber.javabasico.aula52.labs;
 
+@SuppressWarnings("serial")
 public class AgendaCheiaException extends Exception {
 	
 	@Override
