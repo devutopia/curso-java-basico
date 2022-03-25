@@ -12,10 +12,10 @@ public class VariaveisInteiras {
 		
 		long idade04 = 23;
 		
-		System.out.println("Valor variável = " + idade01);
-		System.out.println("Valor variável = " + idade02);
-		System.out.println("Valor variável = " + idade03);
-		System.out.println("Valor variável = " + idade04);
+		System.out.println("Valor variÃ¡vel = " + idade01);
+		System.out.println("Valor variÃ¡vel = " + idade02);
+		System.out.println("Valor variÃ¡vel = " + idade03);
+		System.out.println("Valor variÃ¡vel = " + idade04);
 	}
 
 }

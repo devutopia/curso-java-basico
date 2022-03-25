@@ -18,9 +18,7 @@ public class DivisaoNaoExata extends Exception{
 	 */
 	@Override
 	public String toString() {
-		return ("Resultado de " + num + "/" + denom + " n„o È um inteiro");
-	}
-	
-	
+		return ("Resultado de " + num + "/" + denom + " n√£o √© um inteiro");
+	}	
 
 }
