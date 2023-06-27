@@ -19,7 +19,7 @@ public class Exer10 {
 		tempFahrenheit = 1.8 * tempCelsius + 32;
 		
 		System.out.println("A temperatura " + tempCelsius + 
-				" C é igual a " + tempFahrenheit + " F.");
+				" C Ã© igual a " + tempFahrenheit + " F.");
 
 	}
 

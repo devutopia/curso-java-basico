@@ -18,7 +18,7 @@ public class SwitchCase {
 		} else if (diaSemana ==2){
 			System.out.println("Segunda");
 		} else if (diaSemana ==3){
-			System.out.println("TerÁa");
+			System.out.println("Ter√ßa");
 		} else if (diaSemana ==4){
 			System.out.println("Quarta");
 		} else if (diaSemana ==5){
@@ -26,33 +26,33 @@ public class SwitchCase {
 		} else if (diaSemana ==6){
 			System.out.println("Sexta");
 		} else if (diaSemana ==7){
-			System.out.println("S·bado");
+			System.out.println("S√°bado");
 		} else {
-			System.out.println("Informe um valor v·lido");
+			System.out.println("Informe um valor v√°lido");
 		}
 	
 		switch (diaSemana) {
 		case 1: System.out.println("Domingo"); break;
 		case 2: System.out.println("Segunda"); break;
-		case 3: System.out.println("TerÁa"); break;
+		case 3: System.out.println("Ter√ßa"); break;
 		case 4: System.out.println("Quarta"); break;
 		case 5: System.out.println("Quinta"); break;
 		case 6: System.out.println("Sexta"); break;
-		case 7: System.out.println("S·bado"); break;
-		default: System.out.println("Informe um valor v·lido"); break;
+		case 7: System.out.println("S√°bado"); break;
+		default: System.out.println("Informe um valor v√°lido"); break;
 		}*/
 		
-		//Outra forma de utilizaÁ„o do swicth-case
+		//Outra forma de utiliza√ß√£o do swicth-case
 		
 		switch (diaSemana) {
 		case 2: 
 		case 3: 
 		case 4: 
 		case 5: 
-		case 6: System.out.println("Dia ˙til"); break;
+		case 6: System.out.println("Dia √∫til"); break;
 		case 1: 
 		case 7: System.out.println("Fim de semana"); break;
-		default: System.out.println("Informe um valor v·lido"); break;
+		default: System.out.println("Informe um valor v√°lido"); break;
 		}
 		
 	}

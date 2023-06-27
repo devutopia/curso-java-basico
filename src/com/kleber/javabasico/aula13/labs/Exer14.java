@@ -15,7 +15,7 @@ public class Exer14 {
 		
 		scan = new Scanner(System.in);
 		
-		System.out.println("Inform o tamanho do arquivo:");
+		System.out.println("Informe o tamanho do arquivo:");
 		double tamArquivo  = scan.nextDouble();
 		
 		System.out.println("Informe a velocidade da sua internet:");
@@ -23,7 +23,7 @@ public class Exer14 {
 		
 		double tempo = tamArquivo / velInternet;
 
-		System.out.println("Tempo de download: " + tempo + " min.");		
+		System.out.println("Tempo de download: " + tempo + " min.");
 
 	}
 

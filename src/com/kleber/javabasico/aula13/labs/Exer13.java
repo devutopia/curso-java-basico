@@ -4,21 +4,20 @@ import java.util.Scanner;
 
 public class Exer13 {
 	
-	/*Faça um Programa que pergunte quanto você ganha por hora e o
-	número de horas trabalhadas no mês. Calcule e mostre o total do seu
-	salário no referido mês, sabendo-se que são descontados 11% para o
-	Imposto de Renda, 8% para o inss e 5% para o sindicato, faça um
-	programa que nos dê:
-	. salário bruto.
-	a. quanto pagou ao inss.
-	b. quanto pagou ao sindicato.
-	c. o salário líquido.
-	d. calcule os descontos e o salário líquido, conforme a tabela
+	/*FaÃ§a um Programa que pergunte quanto vocvÃª ganha por hora e o
+	nÃºmero de horas trabalhadas no mÃªs. Calcule e mostre o total do seu
+	salÃ¡rio no referido mÃªs, sabendo-se que so descontados 11% para o
+	Imposto de Renda, 8% para o inss e 5% para o sindicato, faÃ§a um
+	programa que nos dÃª:
+	a. salÃ¡rio bruto.
+	b. quanto pagou ao inss.
+	c. quanto pagou ao sindicato.
+	4. o salÃ¡rio lÃ­quido.
+	d. calcule os descontos e o salÃ¡rio lÃ¡quido, conforme a tabela
 	abaixo:
-	+ Salário Bruto : R$ - IR (11%) : R$ - inss
-	(8%) : R$ - Sindicato ( 5%) : R$ = Salário
-	Liquido : R$
-	Obs.: Salário Bruto - Descontos = Salário Líquido.*/
+	+ SalÃ¡rio Bruto : R$ - IR (11%) : R$ - inss
+	(8%) : R$ - Sindicato ( 5%) : R$ = SalÃ¡rio Liquido : R$
+	Obs.: SalÃ¡rio Bruto - Descontos = SalÃ¡rio LÃ¡quido.*/
 
 	private static Scanner scan;
 
@@ -29,7 +28,7 @@ public class Exer13 {
 		System.out.println("Qual o valor/hora trabalhada?");
 		double valorHora = scan.nextDouble();
 		
-		System.out.println("Quantas horas vc trabalha no mês? ");
+		System.out.println("Quantas horas vc trabalha no mÃªs? ");
 		double horasTrabalhadas = scan.nextDouble();
 		
 		double salarioBruto = valorHora * horasTrabalhadas;
@@ -39,12 +38,12 @@ public class Exer13 {
 		double totalDescontos = impostoDeRenda + inss + sindicato;
 		double salarioLiquido = salarioBruto - totalDescontos; 
 		
-		System.out.println("Salário bruto mensal: " + salarioBruto);
-		System.out.println("IRFF do mês: " + impostoDeRenda);
+		System.out.println("SalÃ¡rio bruto mensal: " + salarioBruto);
+		System.out.println("IRFF do mÃªs: " + impostoDeRenda);
 		System.out.println("inss: " + inss);
 		System.out.println("Taxa do sindicato: " + sindicato);
 		System.out.println("Total de descontos: " + totalDescontos);
-		System.out.println("Salário líquido mensal: " + salarioLiquido);
+		System.out.println("SalÃ¡rio lÃ­quido mensal: " + salarioLiquido);
 		
 		//ok
 	}

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exer11 {
 	
-	/*Faça um Programa que peça 2 números inteiros e um número real.
+	/*FaÃ§a um Programa que pega 2 nÃºmeros inteiros e um nÃºmero real.
 	Calcule e mostre:
 	a. o produto do dobro do primeiro com metade do segundo .
 	b. a soma do triplo do primeiro com o terceiro.
@@ -16,15 +16,15 @@ public class Exer11 {
 		
 		scan = new Scanner(System.in);
 		
-		System.out.println("Entre com o primeiro número inteiro: ");
+		System.out.println("Entre com o primeiro nÃºmero inteiro: ");
 		
 		int primeiroNumero = scan.nextInt();
 		
-		System.out.println("Entre com o segundo número inteiro: ");
+		System.out.println("Entre com o segundo nÃºmero inteiro: ");
 		
 		int segundoNumero = scan.nextInt();
 		
-		System.out.println("Entre com um número real: ");
+		System.out.println("Entre com um nÃºmero real: ");
 		
 		double terceiroNumero = scan.nextDouble();
 		

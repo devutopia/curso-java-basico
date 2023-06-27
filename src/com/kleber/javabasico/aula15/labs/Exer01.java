@@ -2,7 +2,7 @@ package com.kleber.javabasico.aula15.labs;
 
 import java.util.Scanner;
 
-/*Faça um Programa que peça dois números e imprima o maior deles*/
+/*FaÃ§a um Programa que peÃ§a dois nÃºmeros e imprima o maior deles*/
 
 public class Exer01 {
 
@@ -12,16 +12,16 @@ public class Exer01 {
 		
 		scan = new Scanner(System.in);
 		
-		System.out.println("Informe o primeiro número.");
+		System.out.println("Informe o primeiro nÃºmero.");
 		int num1 = scan.nextInt();
 		
-		System.out.println("Informe o segundo número.");
+		System.out.println("Informe o segundo nÃºmero.");
 		int num2 = scan.nextInt();
 		
 		if (num1 > num2){
-			System.out.println("O maior número digitado foi: " + num1);
+			System.out.println("O maior nÃºmero digitado foi: " + num1);
 		} else {
-			System.out.println("O maior número digitado foi: " + num2);
+			System.out.println("O maior nÃºmero digitado foi: " + num2);
 		}
 		//ok
 	}

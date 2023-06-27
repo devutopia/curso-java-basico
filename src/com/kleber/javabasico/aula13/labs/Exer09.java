@@ -14,17 +14,12 @@ public class Exer09 {
 
 		double tempFarenheit = scan.nextDouble();
 
-		double tempCelsius;
-		double tempCelsius2;
+		double c;
 
-		tempCelsius = (tempFarenheit - 32) / 1.8;
-		tempCelsius2 = (5 * (tempFarenheit - 32) / 9);
+		c = (5 * (tempFarenheit - 32) / 9);
 
 		System.out.println("A temperatura 1" + tempFarenheit +
-				" F é igual a " + tempCelsius + " C.");
-		System.out.println("A temperatura 2" + tempFarenheit +
-				" F é igual a " + tempCelsius2 + " C.");
-
+				" F é igual a " + c + " C.");
 	}
 
 }

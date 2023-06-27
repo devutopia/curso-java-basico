@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Exer12 {
 	
-	/*Tendo como dados de entrada a altura de uma pessoa, construa um
-	algoritmo que calcule seu peso ideal, usando a seguinte fórmula:
-	(72.7*altura) - 58*/
+	/* Tendo como dados de entrada a altura de uma pessoa, construa um
+	algoritmo que calcule seu peso ideal, usando a seguinte fÃ³rmula:
+	(72.7*altura) - 58 */
 
 	private static Scanner scan;
 
@@ -19,7 +19,7 @@ public class Exer12 {
 		
 		float pesoIdeal = (72.7f * altura) - 58;
 		
-		System.out.println("Seu peso ideal é: " + pesoIdeal + "kg");
+		System.out.println("Seu peso ideal Ã©: " + pesoIdeal + "kg");
 		
 		//ok
 
