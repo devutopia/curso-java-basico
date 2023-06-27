@@ -20,17 +20,10 @@ public class OperadoresAritmeticos {
 		System.out.println(resultado);
 
 		resultado = resultado % 7;
-<<<<<<< HEAD
 		System.out.println(resultado); // resultado = 3
 
 		String primeiroNome = "Esta é";
 		String segundoNome = " uma String concatenada.";
-=======
-		System.out.println(resultado);
-		
-		String primeiroNome = "Esta é";
-		String segundoNome = " uma String concatenada";
->>>>>>> fd1f6139371549d8010b6250767cc483d22a09e1
 		String terceiroNome = primeiroNome + segundoNome;
 		System.out.println(terceiroNome);
 
