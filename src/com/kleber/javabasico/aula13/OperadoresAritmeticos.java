@@ -22,7 +22,7 @@ public class OperadoresAritmeticos {
 		resultado = resultado % 7;
 		System.out.println(resultado);
 		
-		String primeiroNome = "Esta é";
+		String primeiroNome = "Esta Ã©";
 		String segundoNome = " uma String concatenada";
 		String terceiroNome = primeiroNome + segundoNome;
 		System.out.println(terceiroNome);
