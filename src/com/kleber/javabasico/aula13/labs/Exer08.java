@@ -9,17 +9,17 @@ public class Exer08 {
 	public static void main(String[] args) {
 
 		scan = new Scanner(System.in);
-		
-		System.out.println("Qual o valor/hora trabalhada?");
+
+		System.out.print("Qual o valor/hora trabalhada?");
 		double valorHora = scan.nextDouble();
-		
-		System.out.println("Quantas horas vc trabalha no mês? ");
+
+		System.out.print("Quantas horas vc trabalha no mÃªs? ");
 		double horasTrabalhadas = scan.nextDouble();
-		
+
 		double salario = valorHora * horasTrabalhadas;
-		System.out.println("Seu salário é de: " + salario);
-		
-		//ok
+		System.out.print("Seu salÃ¡rio Ã© de: " + salario);
+
+		// ok
 
 	}
 

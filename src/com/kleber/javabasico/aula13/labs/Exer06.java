@@ -7,17 +7,17 @@ public class Exer06 {
 	private static Scanner scan;
 
 	public static void main(String[] args) {
-		
+
 		scan = new Scanner(System.in);
-		
-		System.out.println("Informe o valor do raio do cÌrculo: ");
-		
+
+		System.out.print("Informe o valor do raio do circulo: ");
+
 		double raio = scan.nextDouble();
 		double area = Math.PI * (raio * raio);
-		
-		System.out.println("¡rea do cÌrculo: " + area);
-		
-		//ok
+
+		System.out.println("√Årea do c√≠rculo: " + area);
+
+		// ok
 	}
 
 }

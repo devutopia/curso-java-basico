@@ -7,22 +7,22 @@ public class Exer03 {
 	private static Scanner scan;
 
 	public static void main(String[] args) {
-		
+
 		scan = new Scanner(System.in);
-		
-		System.out.println("Digite o primeiro número: ");
-		
-		int primeiroNumero = scan.nextInt();
-		
-		System.out.println("Digite o segundo número: ");
-		
-		int segundoNumero = scan.nextInt();
-		
-		int resultado = primeiroNumero + segundoNumero;
-		
-		System.out.println("A soma dos números digitados é: " + resultado);
-		
-		//ok
+
+		System.out.print("Digite o primeiro nÃºmero: ");
+
+		int firstNumber = scan.nextInt();
+
+		System.out.print("Digite o segundo nÃºmero: ");
+
+		int secondNumber = scan.nextInt();
+
+		int result = firstNumber + secondNumber;
+
+		System.out.println("A soma dos nÃºmeros digitados Ã©:" + result);
+
+		// ok
 
 	}
 

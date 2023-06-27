@@ -7,20 +7,20 @@ public class Exer07 {
 	private static Scanner scan;
 
 	public static void main(String[] args) {
-		
+
 		scan = new Scanner(System.in);
-		
+
 		System.out.println("Informe o valor de um lado do quadrado: ");
-		
+
 		double lado = scan.nextDouble();
-		
+
 		double area = Math.pow(lado, 2);
-		
-		System.out.println("A área do quadrado é: " + area);
-		
-		System.out.println("O dobro da área do quadrado é: " + (area * 2));
-		
-		//ok
+
+		System.out.println("A Ã¡rea do quadrado Ã©: " + area);
+
+		System.out.println("O dobro da Ã¡rea do quadrado Ã©: " + (area * 2));
+
+		// ok
 
 	}
 
