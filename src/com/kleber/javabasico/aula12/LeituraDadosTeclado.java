@@ -26,7 +26,7 @@ public class LeituraDadosTeclado {
 		double altura = scan.nextDouble();
 		System.out.println("Sua idade é: " + altura);*/
 		
-		System.out.println("Digite o seu primeiro nome, idade, quantidade de filhos, altura (usar vigula na digitacao) e se tem bichinho de estimacao:");
+		System.out.println("Digite o seu primeiro nome, idade, quantidade de filhos, altura (usar vírgula na digitacao) e se tem bichinho de estimação:");
 		String primeiroNome = scan.next();
 		int idade = scan.nextInt();
 		byte qtdFilhos = scan.nextByte();

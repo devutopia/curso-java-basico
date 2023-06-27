@@ -26,7 +26,7 @@ public class Teste {
 	public static void adicionarContato(Scanner scan, Agenda agenda){
 		
 		try {
-			System.out.println("Criando um contato, digite as informaÁıes:");
+			System.out.println("Criando um contato, digite as informa√ß√µes:");
 			String nome = leInformacaoString(scan, "Entre com o nome do contato:");
 			String telefone = leInformacaoString(scan, "Entre com o telefone do contato:");
 			String email = leInformacaoString(scan, "Entre com o e-mail do contato:");
@@ -72,7 +72,7 @@ public class Teste {
 		int opcao = 0;
 		while (!entradaValida) {
 		
-			System.out.println("Digite a opÁ„o desejada:");
+			System.out.println("Digite a op√ß√£o desejada:");
 			System.out.println("1 - Consultar contato.");
 			System.out.println("2 - Adicionar contato.");
 			System.out.println("3 - Sair.");
@@ -83,10 +83,10 @@ public class Teste {
 				if (opcao == 1 || opcao == 2 ||opcao == 3){
 					entradaValida = true;
 				}else{
-					throw new Exception("Entrada inv·lida");
+					throw new Exception("Entrada inv√°lida");
 				}
 			} catch (Exception e) {
-				System.out.println("Entrada inv·lida, digite novamente.\n");
+				System.out.println("Entrada inv√°1lida, digite novamente.\n");
 			}
 			
 			
