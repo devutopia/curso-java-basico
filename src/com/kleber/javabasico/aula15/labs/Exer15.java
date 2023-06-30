@@ -2,47 +2,47 @@ package com.kleber.javabasico.aula15.labs;
 
 import java.util.Scanner;
 
-/*FaÁa um Programa que peÁa os 3 lados de um tri‚ngulo. O programa
-dever· informar se os valores podem ser um tri‚ngulo. Indique, caso
-os lados formem um tri‚ngulo, se o mesmo È: equil·tero, isÛsceles ou
+/*Fa√ßa um Programa que pe√ßa os 3 lados de um tri√¢ngulo. O programa
+dever√° informar se os valores podem ser um tri√¢ngulo. Indique, caso
+os lados formem um tri√¢ngulo, se o mesmo √©: equil√°tero, is√≥sceles ou
 escaleno.
 Dicas:
-- TrÍs lados formam um tri‚ngulo quando a soma de quaisquer dois lados for maior que o terceiro;
-- Tri‚ngulo Equil·tero: trÍs lados iguais;
-- Tri‚ngulo IsÛsceles: quaisquer dois lados iguais;
-- Tri‚ngulo Escaleno: trÍs lados diferentes;*/
+- Tr√™s lados formam um tri√¢ngulo quando a soma de quaisquer dois lados for maior que o terceiro;
+- tri√¢ngulo Equil√°tero: Tr√™s lados iguais;
+- tri√¢ngulo Is√≥sceles: quaisquer dois lados iguais;
+- tri√¢ngulo Escaleno: Tr√™s lados diferentes;*/
 
 public class Exer15 {
 
 	private static Scanner scan;
 
 	public static void main(String[] args) {
-		
+
 		scan = new Scanner(System.in);
-		
+
 		System.out.println("Entre com lado A");
 		int ladoA = scan.nextInt();
-		
+
 		System.out.println("Entre com lado B");
 		int ladoB = scan.nextInt();
-		
+
 		System.out.println("Entre com lado C");
 		int ladoC = scan.nextInt();
-		
-		if(((ladoA + ladoB) > ladoC) || 
+
+		if (((ladoA + ladoB) > ladoC) ||
 				((ladoA + ladoC) > ladoB) ||
-				((ladoB + ladoC) > ladoA)){
-			
-			if(ladoA == ladoB && ladoA == ladoC && ladoB == ladoC){
-				System.out.println("Tri‚ngulo Equil·tero");
-			}else if (ladoA != ladoB && ladoA != ladoC && ladoB != ladoC){
-				System.out.println("Tri‚ngulo Escaleno");
-			}else if(ladoA == ladoB || ladoA == ladoC || ladoB == ladoC){
-				System.out.println("Tri‚ngulo IsÛsceles");
+				((ladoB + ladoC) > ladoA)) {
+
+			if (ladoA == ladoB && ladoA == ladoC && ladoB == ladoC) {
+				System.out.println("tri√¢ngulo Equil√°tero");
+			} else if (ladoA != ladoB && ladoA != ladoC && ladoB != ladoC) {
+				System.out.println("tri√¢ngulo Escaleno");
+			} else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC) {
+				System.out.println("tri√¢ngulo Is√≥sceles");
 			}
-		}else {
-			System.out.println("N„o È um tri‚ngulo, informe os valores corretamente!");
+		} else {
+			System.out.println("N√¢o √© um tri√¢ngulo, informe os valores corretamente!");
 		}
-		
+
 	}
 }

@@ -28,13 +28,13 @@ public class Exer11 {
 		double salario = scan.nextDouble();
 		int percentual = 0;
 
-		if (salario <= 280) {
+		if (salario <= 1200) {
 			percentual = 20;
-		} else if (salario > 280 && salario <= 700) {
+		} else if (salario > 1200 && salario <= 1700) {
 			percentual = 15;
-		} else if (salario > 700 && salario <= 1500) {
+		} else if (salario > 1700 && salario <= 2500) {
 			percentual = 10;
-		} else if (salario > 1500) {
+		} else if (salario > 3200) {
 			percentual = 5;
 		}
 		double aumento = (salario / 100) * percentual;
@@ -44,8 +44,6 @@ public class Exer11 {
 		System.out.println("Salario antes do reajuste: R$ " + salario);
 		System.out.println("Percentual aplicado de   :    " + percentual + "%");
 		System.out.println("Valor do reajuste        : R$ " + aumento);
-		System.out.println("Novo Sal�rio             : R$ " + novoSalario);
-
+		System.out.println("Novo Salário             : R$ " + novoSalario);
 	}
-
 }

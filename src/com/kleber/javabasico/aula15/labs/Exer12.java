@@ -2,58 +2,63 @@ package com.kleber.javabasico.aula15.labs;
 
 import java.util.Scanner;
 
-/*FaÁa um programa para o c·lculo de uma folha de pagamento, sabendo que os descontos s„o do Imposto de Renda, que depende do 
-sal·rio bruto (conforme tabela abaixo) e 3% para o Sindicato e que o FGTS corresponde a 11% do Sal·rio Bruto, mas n„o È descontado 
-(È a empresa que deposita). O Sal·rio LÌquido corresponde ao Sal·rio Bruto menos os descontos. O programa dever· pedir ao usu·rio o
-valor da sua hora e a quantidade de horas trabalhadas no mÍs.
+/*Fa√ßa um programa para o c√°lculo de uma folha de pagamento, sabendo que os descontos s√£o 
+do Imposto de Renda, que depende do sal√°rio bruto (conforme tabela abaixo) e 3% para o Sindicato 
+e que o FGTS corresponde a 11% do Sal√°rio Bruto, mas n√£o √© descontado (√© a empresa que deposita).
+O Sal√°rio Liquido corresponde ao Sal√°rio Bruto menos os descontos. O programa dever√° pedir ao 
+usu√°rio o valor da sua hora e a quantidade de horas trabalhadas no m√™s.
 Desconto do IR:
-Sal·rio Bruto atÈ 900 (inclusive) - isento
-Sal·rio Bruto atÈ 1500 (inclusive) - desconto de 5%
-Sal·rio Bruto atÈ 2500 (inclusive) - desconto de 10%
-Sal·rio Bruto acima de 2500 - desconto de 20% 
-Imprima na tela as informaÁıes, dispostas conforme o exemplo abaixo. 
-No exemplo o valor da hora È 5 e a quantidade de hora È 220*/
+Sal√°rio Bruto at√© 1903.98 (inclusive) - isento
+Sal√°rio Bruto at√© 2826.65 (inclusive) - desconto de 7.5%
+Sal√°rio Bruto at√© 3751.05 (inclusive) - desconto de 15%
+Sal√°rio Bruto at√© 4664.68 (inclusive) - desconto de 22.5
+Sal√°rio Bruto acima de 4664.68 - desconto de 27.5% 
+Imprima na tela as informa√ß√µes, dispostas conforme o exemplo abaixo. 
+No exemplo o valor da hora √© 23.65 e a quantidade de hora √© 176*/
 
 public class Exer12 {
 
 	private static Scanner scan;
 
 	public static void main(String[] args) {
-		
+
 		scan = new Scanner(System.in);
-		
+
 		System.out.println("Qual o valor/hora trabalhada?");
 		double valorHora = scan.nextDouble();
-		
-		System.out.println("Quantas horas vc trabalha no mÍs? ");
+
+		System.out.println("Quantas horas vc trabalha no Sal√°rio? ");
 		double qtdHoras = scan.nextDouble();
-		
+
 		double salarioBruto = valorHora * qtdHoras;
-		int percentualIR = 0;
-		
-		if (salarioBruto <= 900){
+		double percentualIR = 0;
+
+		if (salarioBruto <= 1903.98) {
 			percentualIR = 0;
-		} else if (salarioBruto > 900 && salarioBruto <= 1500){
-			percentualIR = 5;
-		} else if (salarioBruto > 1500 && salarioBruto <= 2500){
-			percentualIR = 10;
-		} else if (salarioBruto > 2500){
-			percentualIR = 20;			
+		} else if (salarioBruto > 1903.98 && salarioBruto <= 2826.65) {
+			percentualIR = 7.5;
+		} else if (salarioBruto > 2826.65 && salarioBruto <= 3751.05) {
+			percentualIR = 15;
+		} else if (salarioBruto > 3751.05 && salarioBruto <= 4664.68) {
+			percentualIR = 22.5;
+		} else if (salarioBruto > 4664.68) {
+			percentualIR = 27.5;
 		}
-		
-		double ir = (salarioBruto/100) * percentualIR;
+
+		double ir = (salarioBruto / 100) * percentualIR;
 		double inss = (salarioBruto / 100) * 10;
+		double sindicato = (salarioBruto / 100 * 3);
 		double fgts = (salarioBruto / 100) * 11;
 		double totalDescontos = ir + inss;
 		double salarioLiquido = salarioBruto - totalDescontos;
-		
-		System.out.println("Sal·rio bruto: " + "(" + valorHora + " * " + qtdHoras + ")" + ":R$ " + salarioBruto);
-		System.out.println("(-) IR ("+ percentualIR +"%) : R$ " + ir);
+
+		System.out.println("Sal√°rio bruto: " + "(" + valorHora + " * " + qtdHoras + ")" +
+				":R$ " + salarioBruto);
+		System.out.println("(-) IR (" + percentualIR + "%) : R$ " + ir);
 		System.out.println("(-) INSS (11%) : R$ " + inss);
+		System.out.println("Sindicato (3%) : R$ " + sindicato);
 		System.out.println("FGTS (10%) : R$ " + fgts);
 		System.out.println("Total de descontos : R$ " + totalDescontos);
-		System.out.println("Sal·rio lÌquido : R$ " + salarioLiquido);
-
+		System.out.println("Sal√°rio l√≠quido : R$ " + salarioLiquido);
 	}
-
 }

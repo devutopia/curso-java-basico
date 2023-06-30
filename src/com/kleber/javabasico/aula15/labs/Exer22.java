@@ -2,53 +2,52 @@ package com.kleber.javabasico.aula15.labs;
 
 import java.util.Scanner;
 
-/*Uma fruteira est· vendendo frutas com a seguinte tabela de preÁos:
-AtÈ 5 Kg Acima de 5 Kg
+/*Uma fruteira est√° vendendo frutas com a seguinte tabela de pre√ßos:
+At√© 5 Kg Acima de 5 Kg
 Morango R$ 2,50 por Kg R$ 2,20 por Kg
-MaÁ„ R$ 1,80 por Kg R$ 1,50 por Kg
+Ma√ß√£ R$ 1,80 por Kg R$ 1,50 por Kg
 Se o cliente comprar mais de 8 Kg em frutas ou o valor total da
-compra ultrapassar R$ 25,00, receber· ainda um desconto de
+compra ultrapassar R$ 25,00, receber√° ainda um desconto de
 10% sobre este total. Escreva um algoritmo para ler a
 quantidade (em Kg) de morangos e a quantidade (em Kg) de
-maÁas adquiridas e escreva o valor a ser pago pelo cliente.*/
+ma√ß√£s adquiridas e escreva o valor a ser pago pelo cliente.*/
 
 public class Exer22 {
 
 	private static Scanner scan;
 
 	public static void main(String[] args) {
-		
+
 		scan = new Scanner(System.in);
-		
+
 		System.out.println("Qtd de kg morango:");
 		double kgMorango = scan.nextDouble();
-		
-		System.out.println("Qtd de kg maÁ„:");
+
+		System.out.println("Qtd de kg ma√ß√£:");
 		double kgMaca = scan.nextDouble();
-		
+
 		double precoMorango = 0;
-		double precoMaca = 0;
-		
-		if (kgMorango <= 5){
+		if (kgMorango <= 5) {
 			precoMorango = kgMorango * 2.5;
-		}else{
+		} else {
 			precoMorango = kgMorango * 2.2;
 		}
-				
-		if (kgMaca <= 5){
+
+		double precoMaca = 0;
+		if (kgMaca <= 5) {
 			precoMaca = kgMaca * 1.8;
-		}else{
+		} else {
 			precoMaca = kgMaca * 1.5;
 		}
-		
+
 		double valorParcial = precoMorango + precoMaca;
 		double valorPagar = valorParcial;
-		
-		if ((kgMorango + kgMaca) > 8 || valorParcial > 25){
+
+		if ((kgMorango + kgMaca) > 8 || valorParcial > 25) {
 			valorPagar = valorParcial - ((valorParcial / 100) * 10);
 		}
-		
-		System.out.println("Valor ‡ pagar R$ " + valorPagar);
+
+		System.out.println("Valor a pagar R$ " + valorPagar);
 	}
 
 }
