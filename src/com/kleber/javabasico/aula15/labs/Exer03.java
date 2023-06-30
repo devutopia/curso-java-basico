@@ -2,8 +2,8 @@ package com.kleber.javabasico.aula15.labs;
 
 import java.util.Scanner;
 
-/*FaÁa um Programa que verifique se uma letra digitada È "F" ou "M".
-Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inv·lido.*/
+/*Fa√ßa um Programa que verifique se uma letra digitada √© "F" ou "M".
+Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inv√°lido.*/
 
 public class Exer03 {
 
@@ -22,14 +22,14 @@ public class Exer03 {
 		} else if (sexo.equalsIgnoreCase("F")) {
 			System.out.println("Sexo Feminino");
 		} else {
-			System.out.println("Sexo inv·lido");
+			System.out.println("Sexo inv√°lido");
 		}
 		
 		
 		switch (sexo.toUpperCase()) {
 		case "M": System.out.println("Sexo Masculino"); break;
 		case "F": System.out.println("Sexo Feminino"); break;
-		default: System.out.println("Sexo Inv·lido"); break;
+		default: System.out.println("Sexo Inv√°lido"); break;
 		}
 	}
 	//ok

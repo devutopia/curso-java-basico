@@ -2,7 +2,7 @@ package com.kleber.javabasico.aula15.labs;
 
 import java.util.Scanner;
 
-//Faça um Programa que leia três números e mostre o maior deles.
+//FaÃ§a um Programa que leia trÃªs nÃºmeros e mostre o maior deles.
 
 public class Exer06 {
 
@@ -12,17 +12,17 @@ public class Exer06 {
 		
 		scan = new Scanner(System.in);
 		
-		System.out.println("Informe 3 números no seguinte formato n1 n2 n3");
+		System.out.println("Informe 3 nÃºmeros no seguinte formato n1 n2 n3");
 		double num1 = scan.nextDouble();
 		double num2 = scan.nextDouble();
 		double num3 = scan.nextDouble();
 		
 		if(num1 > num2 && num1 > num3){
-			System.out.println("O maior número digitado foi: " + num1);
+			System.out.println("O primeiro nÃºmero digitado, " + num1 + " Ã© o maior.");
 		} else if(num2 > num1 && num2 > num3){
-			System.out.println("O maior número digitado foi: " + num2);
+			System.out.println("O segundo nÃºmero digitado, " + num2 + " Ã© o maior.");
 		} else {
-			System.out.println("O maior número digitado foi: " + num3);
+			System.out.println("O terceiro nÃºmero digitado, " + num3 + " Ã© o maior.");
 		}
 	}
 	//ok

@@ -2,7 +2,7 @@ package com.kleber.javabasico.aula15.labs;
 
 import java.util.Scanner;
 
-/*FaÁa um Programa que verifique se uma letra digitada È vogal ou
+/*Fa√ßa um Programa que verifique se uma letra digitada √© vogal ou
 consoante.*/
 
 public class Exer04 {
@@ -17,7 +17,7 @@ public class Exer04 {
 		String letra = scan.next();
 		
 		if (letra.length() > 1){
-			System.out.println("N„o È uma letra v·lida");
+			System.out.println("N√£o √© uma letra v√°lida");
 		} else {
 			switch (letra.toLowerCase()) {
 			case "a":
@@ -25,10 +25,10 @@ public class Exer04 {
 			case "i":
 			case "o":
 			case "u":
-				System.out.println("Essa È uma vogal");
+				System.out.println("Essa √© uma vogal");
 				break;
 			default:
-				System.out.println("Essa È uma consoante");
+				System.out.println("Essa √© uma consoante");
 			}
 		}
 	}

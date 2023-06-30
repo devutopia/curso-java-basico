@@ -2,7 +2,7 @@ package com.kleber.javabasico.aula15.labs;
 
 import java.util.Scanner;
 
-/*Faça um Programa que peça um valor e mostre na tela se o valor é
+/*FaÃ§a um Programa que peÃ§a um valor e mostre na tela se o valor Ã©
 positivo ou negativo.*/
 
 public class Exer02 {
@@ -13,15 +13,15 @@ public class Exer02 {
 
 		scan = new Scanner(System.in);
 		
-		System.out.println("Informe um número.");
+		System.out.println("Informe um nÃºmero.");
 		int numero = scan.nextInt();
 		
 		if (numero > 0){
-			System.out.println("Você digitou um número positivo");
+			System.out.println("VocÃª digitou um nÃºmero positivo");
 		} else if (numero < 0){
-			System.out.println("Você digitou um número negativo");
+			System.out.println("VocÃª digitou um nÃºmero negativo");
 		} else {
-			System.out.println("Você digitou um número neutro");
+			System.out.println("VocÃª digitou um nÃºmero neutro");
 		}
 		//ok
 	}
