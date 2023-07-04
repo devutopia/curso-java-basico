@@ -1,16 +1,15 @@
 package com.kleber.javabasico.aula17.labs;
 
-/*Faça um programa que imprima na tela apenas os números ímpares
+/*FaÃ§a um programa que imprima na tela apenas os nÃºmeros Ã­mpares
 entre 1 e 50.*/
 
 public class Exer09 {
 
 	public static void main(String[] args) {
-	
-		
-		for (int i = 1; i < 50; i++){
-			
-			if(i % 2 != 0){
+
+		for (int i = 1; i < 50; i++) {
+
+			if (i % 2 != 0) {
 				System.out.println(i);
 			}
 		}

@@ -1,8 +1,8 @@
 package com.kleber.javabasico.aula17.labs;
 
-/*Altere o programa anterior permitindo ao usuário informar as
-populações e as taxas de crescimento iniciais. Valide a entrada e
-permita repetir a operação*/
+/*Altere o programa anterior permitindo ao usuÃ¡rio informar as
+populaÃ§Ãµes e as taxas de crescimento iniciais. Valide a entrada e
+permita repetir a operaÃ§Ã£o*/
 
 import java.util.Scanner;
 
@@ -11,75 +11,75 @@ public class Exer05 {
 	private static Scanner scan;
 
 	public static void main(String[] args) {
-		
+
 		scan = new Scanner(System.in);
-		
+
 		boolean valido = false;
 		double popA;
 		double popB;
 		double taxaA;
 		double taxaB;
-		
+
 		do {
-			System.out.println("Informe a população do País A: ");
+			System.out.println("Informe a populaÃ§Ã£o do PaÃ­s A: ");
 			popA = scan.nextDouble();
-			
-			if (popA > 0){
+
+			if (popA > 0) {
 				valido = true;
 			} else {
-				System.out.println("População precisa ser maior que 0.");
+				System.out.println("populaÃ§Ã£o precisa ser maior que 0.");
 			}
 		} while (!valido);
-		
+
 		valido = false;
-		
+
 		do {
-			System.out.println("Informe a população do País B: ");
+			System.out.println("Informe a populaÃ§Ã£o do PaÃ­s B: ");
 			popB = scan.nextDouble();
-			
-			if (popB > 0){
+
+			if (popB > 0) {
 				valido = true;
 			} else {
-				System.out.println("População precisa ser maior que 0.");
+				System.out.println("populaÃ§Ã£o precisa ser maior que 0.");
 			}
 		} while (!valido);
-		
+
 		valido = false;
-		
+
 		do {
-			System.out.println("Informe a taxa de crescimento da população A: ");
+			System.out.println("Informe a taxa de crescimento da populaÃ§Ã£o A: ");
 			taxaA = scan.nextDouble();
-			
-			if (taxaA > 0){
+
+			if (taxaA > 0) {
 				valido = true;
 			} else {
 				System.out.println("A taxa de crescimento precisa ser maior que 0.");
 			}
 		} while (!valido);
-		
+
 		valido = false;
-		
+
 		do {
-			System.out.println("Informe a taxa de crescimento da população B: ");
+			System.out.println("Informe a taxa de crescimento da populaÃ§Ã£o B: ");
 			taxaB = scan.nextDouble();
-			
-			if (taxaB > 0){
+
+			if (taxaB > 0) {
 				valido = true;
 			} else {
 				System.out.println("A taxa de crescimento precisa ser maior que 0.");
 			}
 		} while (!valido);
-		
+
 		int cont = 0;
-		
-		while (popA < popB){
-			popA += (popA/100) * taxaA;
-			popB += (popB/100) * taxaB;
+
+		while (popA < popB) {
+			popA += (popA / 100) * taxaA;
+			popB += (popB / 100) * taxaB;
 			cont++;
 		}
-		System.out.println("População A: " + popA);
-		System.out.println("População B: " + popB);
+		System.out.println("populaÃ§Ã£o A: " + popA);
+		System.out.println("populaÃ§Ã£o B: " + popB);
 		System.out.println("Qtd anos   : " + cont);
 	}
-		
+
 }

@@ -1,6 +1,6 @@
 package com.kleber.javabasico.aula17.labs;
 
-//Faça um programa que leia 5 números e informe o maior número.
+//FaÃ§a um programa que leia 5 nÃºmeros e informe o maior nÃºmero.
 
 import java.util.Scanner;
 
@@ -9,20 +9,20 @@ public class Exer07 {
 	private static Scanner scan;
 
 	public static void main(String[] args) {
-		
+
 		scan = new Scanner(System.in);
-		
+
 		int num;
 		int maior = Integer.MIN_VALUE;
-		
-		for(int i = 0; i < 5; i++){
-			System.out.println("Entre com um número:");
+
+		for (int i = 0; i < 5; i++) {
+			System.out.println("Entre com um nÃºmero:");
 			num = scan.nextInt();
-			
-			if(num > maior){
+			if (num > maior) {
 				maior = num;
+				// System.out.println("O maior agora Ã©: " + maior);
 			}
 		}
-		System.out.println("O maior número digitado foi: " + maior);
+		System.out.println("O maior numero digitado foi: " + maior);
 	}
 }

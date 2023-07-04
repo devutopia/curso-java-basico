@@ -1,30 +1,35 @@
 package com.kleber.javabasico.aula17.labs;
 
-//Altere o programa anterior para mostrar no final a soma dos números.
+//Altere o programa anterior para mostrar no final a soma dos nÃºmeros.
 
 import java.util.Scanner;
 
 public class Exer11 {
 
-		private static Scanner scan;
+	private static Scanner scan;
 
-		public static void main(String[] args) {
-			
-			scan = new Scanner(System.in);
-			
-			
-			System.out.println("Entre com o primeiro número:");
-			int num1 = scan.nextInt();
-			
-			System.out.println("Entre com o segundo número:");
-			int num2 = scan.nextInt();
-			
-			int soma = 0;
-					
-			for (int i=num1; i<=num2; i++){
+	public static void main(String[] args) {
+
+		scan = new Scanner(System.in);
+
+		System.out.println("Entre com o primeiro nÃºmero:");
+		int num1 = scan.nextInt();
+
+		System.out.println("Entre com o segundo nÃºmero:");
+		int num2 = scan.nextInt();
+
+		int soma = 0;
+
+		if (num1 > num2) {
+			for (int i = num1; i >= num2; i--) {
+				soma += i;
 				System.out.println(i);
+			}
+		} else {
+			for (int i = num1; i <= num2; i++) {
 				soma += i;
 			}
-			System.out.println("Soma dos números apresentados = " + soma);
 		}
+		System.out.println("Soma dos nÃºmeros apresentados = " + soma);
+	}
 }
